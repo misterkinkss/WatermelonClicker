@@ -1,3 +1,5 @@
+using System;
+using System.Collections;
 using TMPro;
 using UnityEngine;
 
@@ -8,10 +10,14 @@ public class Watermelon : MonoBehaviour
     public ParticleSystem particleSystem;
     public int score;
     public int powerClick;
-    
-
+    public int scorePerSecond;
+        
     public int Click = Animator.StringToHash("Click");
 
+    private void Start()
+    {
+        StartCoroutine(PassiveScoreIncome());
+    }
 
     public void OnClick()
     {
@@ -26,5 +32,16 @@ public class Watermelon : MonoBehaviour
         particleSystem.transform.position = newParticalSystemPosition;
 
         particleSystem.Emit(1);
+    }
+    
+    public IEnumerator PassiveScoreIncome()
+    {
+        WaitForSeconds waitForSeconds = new WaitForSeconds(1.0f);
+        while (true)
+        {
+            score += scorePerSecond;
+            scoreText.text = score.ToString();
+            yield return waitForSeconds;
+        }
     }
 }

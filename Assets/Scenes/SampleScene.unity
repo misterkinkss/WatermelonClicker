@@ -6212,6 +6212,7 @@ MonoBehaviour:
   particleSystem: {fileID: 1341103376}
   score: 0
   powerClick: 1
+  scorePerSecond: 1
   Click: 2067262756
 --- !u!95 &1463965084
 Animator:
