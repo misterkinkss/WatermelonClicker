@@ -1,4 +1,3 @@
-using System;
 using System.Collections;
 using TMPro;
 using UnityEngine;
@@ -12,7 +11,7 @@ public class Watermelon : MonoBehaviour
     public int powerClick;
     public int scorePerSecond;
         
-    public int Click = Animator.StringToHash("Click");
+    private readonly int _click = Animator.StringToHash("Click");
 
     private void Start()
     {
@@ -25,7 +24,7 @@ public class Watermelon : MonoBehaviour
 
         scoreText.text = score.ToString();
 
-        animator.SetTrigger(Click);
+        animator.SetTrigger(_click);
 
         Vector3 newParticalSystemPosition = Camera.main!.ScreenToWorldPoint(Input.mousePosition);
         newParticalSystemPosition.z = -1;

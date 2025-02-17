@@ -10,11 +10,11 @@ GameObject:
   m_Component:
   - component: {fileID: 8430452371162064652}
   - component: {fileID: 1276440478956900364}
-  - component: {fileID: 7211164028495588249}
+  - component: {fileID: 482631610344835962}
   - component: {fileID: 48543362994168391}
   - component: {fileID: 2145515496954319427}
   m_Layer: 5
-  m_Name: UpgradeButton
+  m_Name: ScorePerSecondUpgradeButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -52,7 +52,7 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1768472816823086124}
   m_CullTransparentMesh: 1
---- !u!114 &7211164028495588249
+--- !u!114 &482631610344835962
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -61,10 +61,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 1768472816823086124}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5759c9dfbdf890f40afdc8efd73f37f5, type: 3}
+  m_Script: {fileID: 11500000, guid: b91c451b4c2724445826469676bf6dcb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   watermelon: {fileID: 0}
+  priceText: {fileID: 7655428484239365473}
+  decoration: {fileID: 0}
   price: 0
 --- !u!114 &48543362994168391
 MonoBehaviour:
@@ -140,9 +142,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: ShopButton, Assembly-CSharp
-        m_MethodName: OnClick
+      - m_Target: {fileID: 482631610344835962}
+        m_TargetAssemblyTypeName: ScorePerSecondUpgradeButton, Assembly-CSharp
+        m_MethodName: Buy
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -353,8 +355,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\u041E\u0431\u044B\u043A\u043D\u043E\u0432\u0435\u043D\u043D\u043E\u0435
-    \u0443\u0434\u043E\u0431\u0440\u0435\u043D\u0438\u0435"
+  m_text: "\u041E\u0431\u044B\u043A\u043D\u043E\u0432\u0435\u043D\u043D\u0430\u044F
+    \u043F\u043B\u0430\u043D\u0442\u0430\u0446\u0438\u044F"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: ef73aa6a333180a429d6246f52057b48, type: 2}
   m_sharedMaterial: {fileID: -977557825752894630, guid: ef73aa6a333180a429d6246f52057b48, type: 2}
@@ -534,8 +536,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -174.26418, y: -49.499996}
-  m_SizeDelta: {x: 362.6754, y: 54.8705}
+  m_AnchoredPosition: {x: -99.797, y: -55.1}
+  m_SizeDelta: {x: 491.68, y: 54.8705}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &2023871470873589815
 CanvasRenderer:
@@ -565,7 +567,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "+1 \u043A \u043A\u043B\u0438\u043A\u0443"
+  m_text: "+1 \u043A\u043B\u0438\u043A \u0432 \u0441\u0435\u043A\u0443\u043D\u0434\u0443"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: ef73aa6a333180a429d6246f52057b48, type: 2}
   m_sharedMaterial: {fileID: -977557825752894630, guid: ef73aa6a333180a429d6246f52057b48, type: 2}
@@ -592,8 +594,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 49.2
-  m_fontSizeBase: 49.2
+  m_fontSize: 48
+  m_fontSizeBase: 48
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
