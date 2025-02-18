@@ -12,7 +12,7 @@ public class ClickPowerUpgradeButton : ShopButton
             watermelon.score -= price;
             watermelon.powerClick += increaseValue;
             price = (int)(price * 1.5f);
-            priceText.text = price.ToString();
+            priceText.text = price + " <sprite=0>";
             watermelon.scoreText.text = watermelon.score.ToString();
             particleText.text = "+" + watermelon.powerClick;
             decoration.SetActive(true);
