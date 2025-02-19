@@ -9,9 +9,9 @@ public class ScorePerSecondUpgradeButton : ShopButton
         {
             watermelon.score -= price;
             watermelon.scorePerSecond += increaseValue;
-            watermelon.scoreText.text = watermelon.score.ToString();
-            price = (int)(price * 1.5f);
-            priceText.text = price + " <sprite=0>";
+            watermelon.scoreText.text = ScoreFormatter.Format(watermelon.score);
+            price *= 1.5D;
+            priceText.text = ScoreFormatter.Format(price);
             decoration.SetActive(true);
         }
     }

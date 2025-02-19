@@ -3,7 +3,7 @@ using TMPro;
 public class ClickPowerUpgradeButton : ShopButton
 {
     public TMP_Text particleText;
-    public int increaseValue;
+    public double increaseValue;
     
     public override void Buy()
     {
@@ -11,10 +11,10 @@ public class ClickPowerUpgradeButton : ShopButton
         {
             watermelon.score -= price;
             watermelon.powerClick += increaseValue;
-            price = (int)(price * 1.5f);
-            priceText.text = price + " <sprite=0>";
-            watermelon.scoreText.text = watermelon.score.ToString();
-            particleText.text = "+" + watermelon.powerClick;
+            price *= 1.5D;
+            priceText.text = ScoreFormatter.Format(price);
+            watermelon.scoreText.text = ScoreFormatter.Format(watermelon.score);
+            particleText.text = "+" + ScoreFormatter.Format(watermelon.powerClick);
             decoration.SetActive(true);
         }
     }

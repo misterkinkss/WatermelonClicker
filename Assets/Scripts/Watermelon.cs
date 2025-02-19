@@ -7,9 +7,9 @@ public class Watermelon : MonoBehaviour
     public TMP_Text scoreText;
     public Animator animator;
     public ParticleSystem particleSystem;
-    public int score;
-    public int powerClick;
-    public int scorePerSecond;
+    public double score;
+    public double powerClick;
+    public double scorePerSecond;
         
     private readonly int _click = Animator.StringToHash("Click");
 
@@ -22,7 +22,7 @@ public class Watermelon : MonoBehaviour
     {
         score += powerClick;
 
-        scoreText.text = score.ToString();
+        scoreText.text = ScoreFormatter.Format(score);
 
         animator.SetTrigger(_click);
 
@@ -39,7 +39,7 @@ public class Watermelon : MonoBehaviour
         while (true)
         {
             score += scorePerSecond;
-            scoreText.text = score.ToString();
+            scoreText.text = ScoreFormatter.Format(score);
             yield return waitForSeconds;
         }
     }
