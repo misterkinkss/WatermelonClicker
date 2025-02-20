@@ -9,6 +9,7 @@ public class ScorePerSecondUpgradeButton : ShopButton
         {
             watermelon.score -= price;
             watermelon.scorePerSecond += increaseValue;
+            watermelon.scorePerSecondText.text = ScoreFormatter.Format(watermelon.scorePerSecond) + "в сек.";
             watermelon.scoreText.text = ScoreFormatter.Format(watermelon.score);
             price *= 1.5D;
             priceText.text = ScoreFormatter.Format(price);

@@ -5,6 +5,7 @@ using UnityEngine;
 public class Watermelon : MonoBehaviour
 {
     public TMP_Text scoreText;
+    public TMP_Text scorePerSecondText;
     public Animator animator;
     public ParticleSystem particleSystem;
     public double score;
