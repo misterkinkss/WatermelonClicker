@@ -7,7 +7,8 @@ public class Watermelon : MonoBehaviour
     public TMP_Text scoreText;
     public TMP_Text scorePerSecondText;
     public Animator animator;
-    public ParticleSystem particleSystem;
+    public new ParticleSystem particleSystem;
+    public ProgressBar progressBar;
     public double score;
     public double powerClick;
     public double scorePerSecond;
@@ -27,11 +28,15 @@ public class Watermelon : MonoBehaviour
 
         animator.SetTrigger(_click);
 
-        Vector3 newParticalSystemPosition = Camera.main!.ScreenToWorldPoint(Input.mousePosition);
-        newParticalSystemPosition.z = -1;
-        particleSystem.transform.position = newParticalSystemPosition;
+        Vector3 newParticleSystemPosition = Camera.main!.ScreenToWorldPoint(Input.mousePosition);
+        newParticleSystemPosition.z = -1;
+        particleSystem.transform.position = newParticleSystemPosition;
 
         particleSystem.Emit(1);
+
+        progressBar.experience++;
+        
+        progressBar.IncreaseFilling();
     }
     
     public IEnumerator PassiveScoreIncome()
