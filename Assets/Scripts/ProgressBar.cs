@@ -5,8 +5,10 @@ using UnityEngine.UI;
 public class ProgressBar : MonoBehaviour
 {
     public Image fillingImage;
+    public Image watermelonImage;
     public TMP_Text levelText;
     public int[] requiredNextLevelClicks;
+    public Sprite[] evolutionStageSprites;
     public int level;
     public int experience;
 
@@ -22,6 +24,7 @@ public class ProgressBar : MonoBehaviour
                 level += 1;
                 levelText.text = "УРОВЕНЬ " + level;
                 fillingImage.fillAmount = 0.0f;
+                watermelonImage.sprite = evolutionStageSprites[level];
             }
         }
 

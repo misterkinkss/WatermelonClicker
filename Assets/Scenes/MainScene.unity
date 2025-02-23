@@ -384,7 +384,7 @@ PrefabInstance:
     - target: {fileID: 8257875683642172504, guid: 9414ac6509b8cfa418bd9e5a2e7e5a67, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: -2722915308739871944, guid: 670f5285f002acd4eb57b37068de6ee7, type: 3}
+      objectReference: {fileID: 8246993848131270631, guid: f73388d23070aa14ba0cd8f31a2b93d5, type: 3}
     - target: {fileID: 8430452371162064652, guid: 9414ac6509b8cfa418bd9e5a2e7e5a67, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -1977,7 +1977,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -2722915308739871944, guid: 670f5285f002acd4eb57b37068de6ee7, type: 3}
+  m_Sprite: {fileID: 8246993848131270631, guid: f73388d23070aa14ba0cd8f31a2b93d5, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -7888,7 +7888,7 @@ PrefabInstance:
     - target: {fileID: 8257875683642172504, guid: 9414ac6509b8cfa418bd9e5a2e7e5a67, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: -2722915308739871944, guid: 670f5285f002acd4eb57b37068de6ee7, type: 3}
+      objectReference: {fileID: 8246993848131270631, guid: f73388d23070aa14ba0cd8f31a2b93d5, type: 3}
     - target: {fileID: 8257875683642172504, guid: 9414ac6509b8cfa418bd9e5a2e7e5a67, type: 3}
       propertyPath: m_Color.b
       value: 1
@@ -8094,8 +8094,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fillingImage: {fileID: 1456696768}
+  watermelonImage: {fileID: 1463965081}
   levelText: {fileID: 471313951}
-  requiredNextLevelClicks: 0a0000005a000000c8000000900100005802000020030000e8030000b0040000
+  requiredNextLevelClicks: 0a0000005a000000c8000000900100005802000020030000e8030000
+  evolutionStageSprites:
+  - {fileID: -7866928900747384746, guid: ea460dd7dcca0984e9fdf3fe4b6649b5, type: 3}
+  - {fileID: 674351573900472722, guid: 7238bff62da77654bbb211a071a6a6b6, type: 3}
+  - {fileID: -6470460504253458178, guid: 982e53e19feebae4cb883c91263fbcad, type: 3}
+  - {fileID: 21300000, guid: d54d6c1fbc282cb4aba30ec6387f5983, type: 3}
+  - {fileID: 8246993848131270631, guid: f73388d23070aa14ba0cd8f31a2b93d5, type: 3}
+  - {fileID: -7866928900747384746, guid: ea460dd7dcca0984e9fdf3fe4b6649b5, type: 3}
+  - {fileID: 8246993848131270631, guid: f73388d23070aa14ba0cd8f31a2b93d5, type: 3}
   level: 0
   experience: 0
 --- !u!222 &2081394637
