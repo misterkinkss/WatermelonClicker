@@ -7250,7 +7250,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: -0.000030517578, y: 0}
-  m_SizeDelta: {x: 405.78, y: 442.76}
+  m_SizeDelta: {x: 493.63, y: 493.63}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1463965080
 MonoBehaviour:
@@ -7328,7 +7328,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: d54d6c1fbc282cb4aba30ec6387f5983, type: 3}
+  m_Sprite: {fileID: 4018074224661003100, guid: bd94fb180d158a447b6a201959f6f43e, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -8098,13 +8098,14 @@ MonoBehaviour:
   levelText: {fileID: 471313951}
   requiredNextLevelClicks: 0a0000005a000000c8000000900100005802000020030000e8030000
   evolutionStageSprites:
-  - {fileID: -7866928900747384746, guid: ea460dd7dcca0984e9fdf3fe4b6649b5, type: 3}
-  - {fileID: 674351573900472722, guid: 7238bff62da77654bbb211a071a6a6b6, type: 3}
-  - {fileID: -6470460504253458178, guid: 982e53e19feebae4cb883c91263fbcad, type: 3}
-  - {fileID: 21300000, guid: d54d6c1fbc282cb4aba30ec6387f5983, type: 3}
-  - {fileID: 8246993848131270631, guid: f73388d23070aa14ba0cd8f31a2b93d5, type: 3}
-  - {fileID: -7866928900747384746, guid: ea460dd7dcca0984e9fdf3fe4b6649b5, type: 3}
-  - {fileID: 8246993848131270631, guid: f73388d23070aa14ba0cd8f31a2b93d5, type: 3}
+  - {fileID: 4018074224661003100, guid: bd94fb180d158a447b6a201959f6f43e, type: 3}
+  - {fileID: 948988277, guid: bd94fb180d158a447b6a201959f6f43e, type: 3}
+  - {fileID: 110626100, guid: bd94fb180d158a447b6a201959f6f43e, type: 3}
+  - {fileID: -330550336, guid: bd94fb180d158a447b6a201959f6f43e, type: 3}
+  - {fileID: 696347083, guid: bd94fb180d158a447b6a201959f6f43e, type: 3}
+  - {fileID: -1896160287, guid: bd94fb180d158a447b6a201959f6f43e, type: 3}
+  - {fileID: 303478190, guid: bd94fb180d158a447b6a201959f6f43e, type: 3}
+  - {fileID: -427615644, guid: bd94fb180d158a447b6a201959f6f43e, type: 3}
   level: 0
   experience: 0
 --- !u!222 &2081394637
