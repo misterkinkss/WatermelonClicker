@@ -1,5 +1,7 @@
+using System.Collections;
 using TMPro;
 using UnityEngine;
+using UnityEngine.Serialization;
 using UnityEngine.UI;
 
 public class ProgressBar : MonoBehaviour
@@ -13,19 +15,53 @@ public class ProgressBar : MonoBehaviour
     public int level;
     public int experience;
 
-    public void IncreaseFilling()
+    private void Start()
+    {
+        StartCoroutine(SmoothIncrease());
+    }
+
+
+    public IEnumerator SmoothIncrease()
+    {
+        float step = 1.0f / requiredNextLevelClicks[level] / 25.0f;
+
+        while (true)
+        {
+            if (level == requiredNextLevelClicks.Length) break;
+            
+            if (fillingImage.fillAmount < (float)experience / requiredNextLevelClicks[level])
+            {
+                fillingImage.fillAmount += step;
+            }
+
+            yield return new WaitForSeconds(0.02f);
+        }
+    }
+
+    public IEnumerator SmoothReset()
+    {
+        while (fillingImage.fillAmount > 0.0f)
+        {
+            fillingImage.fillAmount -= 0.01f;
+            yield return new WaitForSeconds(0.01f);
+        }
+    }
+
+    public void UpdateAppearance()
     {
         if (level != requiredNextLevelClicks.Length)
         {
-            fillingImage.fillAmount += 1.0f / requiredNextLevelClicks[level]; 
-
             if (experience >= requiredNextLevelClicks[level])
             {
                 experience = 0;
                 level += 1;
                 levelText.text = "УРОВЕНЬ " + level;
-                fillingImage.fillAmount = 0.0f;
                 watermelonImage.sprite = evolutionStageSprites[level];
+                
+                if (level != requiredNextLevelClicks.Length)
+                {
+                    StartCoroutine(SmoothReset());
+                }
             }
         }
 

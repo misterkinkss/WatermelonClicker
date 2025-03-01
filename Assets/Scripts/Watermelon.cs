@@ -36,7 +36,7 @@ public class Watermelon : MonoBehaviour
 
         progressBar.experience++;
         
-        progressBar.IncreaseFilling();
+        progressBar.UpdateAppearance();
     }
     
     public IEnumerator PassiveScoreIncome()
