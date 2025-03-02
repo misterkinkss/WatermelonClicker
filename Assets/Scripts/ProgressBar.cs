@@ -1,7 +1,6 @@
 using System.Collections;
 using TMPro;
 using UnityEngine;
-using UnityEngine.Serialization;
 using UnityEngine.UI;
 
 public class ProgressBar : MonoBehaviour
@@ -11,15 +10,17 @@ public class ProgressBar : MonoBehaviour
     public TMP_Text levelText;
     public RectTransform watermelonRectTransform;
     public Sprite[] evolutionStageSprites;
+    public Animator animator;
     public int[] requiredNextLevelClicks;
     public int level;
     public int experience;
 
+    private readonly int _flash = Animator.StringToHash("Flash");
+    
     private void Start()
     {
         StartCoroutine(SmoothIncrease());
     }
-
 
     public IEnumerator SmoothIncrease()
     {
@@ -34,7 +35,7 @@ public class ProgressBar : MonoBehaviour
                 fillingImage.fillAmount += step;
             }
 
-            yield return new WaitForSeconds(0.02f);
+            yield return new WaitForSeconds(0.01f);
         }
     }
 
@@ -57,6 +58,7 @@ public class ProgressBar : MonoBehaviour
                 level += 1;
                 levelText.text = "УРОВЕНЬ " + level;
                 watermelonImage.sprite = evolutionStageSprites[level];
+                animator.SetTrigger(_flash);
                 
                 if (level != requiredNextLevelClicks.Length)
                 {
