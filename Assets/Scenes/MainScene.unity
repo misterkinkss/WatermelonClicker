@@ -345,6 +345,52 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 87436104}
   m_CullTransparentMesh: 1
+--- !u!1 &104020571
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 104020572}
+  - component: {fileID: 104020573}
+  m_Layer: 0
+  m_Name: ScorePerSecondManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &104020572
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 104020571}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1130592471}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &104020573
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 104020571}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3179f50890435da478e5a59fe3239dc8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scoreCounter: {fileID: 1555261986}
+  scorePerSecond: 0
 --- !u!1001 &110021615
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -366,9 +412,17 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1463965083}
     - target: {fileID: 482631610344835962, guid: 9414ac6509b8cfa418bd9e5a2e7e5a67, type: 3}
+      propertyPath: scoreCounter
+      value: 
+      objectReference: {fileID: 1555261986}
+    - target: {fileID: 482631610344835962, guid: 9414ac6509b8cfa418bd9e5a2e7e5a67, type: 3}
       propertyPath: increaseValue
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 482631610344835962, guid: 9414ac6509b8cfa418bd9e5a2e7e5a67, type: 3}
+      propertyPath: scorePerSecondManager
+      value: 
+      objectReference: {fileID: 104020573}
     - target: {fileID: 1768472816823086124, guid: 9414ac6509b8cfa418bd9e5a2e7e5a67, type: 3}
       propertyPath: m_Name
       value: ScorePerSecondUpgradeButton
@@ -1292,6 +1346,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 326167242}
     - target: {fileID: 617952891147493527, guid: 55cbafa2ab47efa46af253c6f59b1a81, type: 3}
+      propertyPath: scoreCounter
+      value: 
+      objectReference: {fileID: 1555261986}
+    - target: {fileID: 617952891147493527, guid: 55cbafa2ab47efa46af253c6f59b1a81, type: 3}
       propertyPath: increaseValue
       value: 1
       objectReference: {fileID: 0}
@@ -1823,7 +1881,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 626895897}
         m_TargetAssemblyTypeName: SettingsButtons, Assembly-CSharp
-        m_MethodName: OpenSettings
+        m_MethodName: Open
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1894,6 +1952,7 @@ GameObject:
   m_Component:
   - component: {fileID: 700036292}
   - component: {fileID: 700036294}
+  - component: {fileID: 700036295}
   - component: {fileID: 700036293}
   m_Layer: 5
   m_Name: ScoreText
@@ -2021,6 +2080,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 700036291}
   m_CullTransparentMesh: 1
+--- !u!114 &700036295
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 700036291}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 940c6d109b3206b42a2f07da0011a166, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scoreText: {fileID: 700036293}
 --- !u!1 &731905852
 GameObject:
   m_ObjectHideFlags: 0
@@ -2107,7 +2179,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 731905857}
         m_TargetAssemblyTypeName: SettingsButtons, Assembly-CSharp
-        m_MethodName: CloseSettings
+        m_MethodName: Close
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2333,6 +2405,10 @@ PrefabInstance:
       propertyPath: particleText
       value: 
       objectReference: {fileID: 326167242}
+    - target: {fileID: 617952891147493527, guid: 55cbafa2ab47efa46af253c6f59b1a81, type: 3}
+      propertyPath: scoreCounter
+      value: 
+      objectReference: {fileID: 1555261986}
     - target: {fileID: 617952891147493527, guid: 55cbafa2ab47efa46af253c6f59b1a81, type: 3}
       propertyPath: increaseValue
       value: 5
@@ -2727,6 +2803,7 @@ GameObject:
   m_Component:
   - component: {fileID: 903436576}
   - component: {fileID: 903436575}
+  - component: {fileID: 903436577}
   - component: {fileID: 903436574}
   m_Layer: 5
   m_Name: ScorePerSecondText
@@ -2853,6 +2930,19 @@ RectTransform:
   m_AnchoredPosition: {x: 0.015022, y: -119}
   m_SizeDelta: {x: 472.86, y: 80.09}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &903436577
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 903436573}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff3993d35c4e78d4595fc183035ce5da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scorePerSecondText: {fileID: 903436574}
 --- !u!224 &921831854 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 8430452371162064652, guid: 9414ac6509b8cfa418bd9e5a2e7e5a67, type: 3}
@@ -2922,6 +3012,8 @@ Transform:
   m_Children:
   - {fileID: 519420032}
   - {fileID: 57022411}
+  - {fileID: 1555261987}
+  - {fileID: 104020572}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1168327918
@@ -3342,8 +3434,8 @@ RectTransform:
   - {fileID: 1341103374}
   - {fileID: 1715944285}
   - {fileID: 2081394634}
-  - {fileID: 1502444589}
   - {fileID: 1415185097}
+  - {fileID: 1502444589}
   - {fileID: 259549057}
   m_Father: {fileID: 954174050}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -8604,14 +8696,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f2fc7fd3615ab904a89983be17029cfb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scoreText: {fileID: 700036293}
-  scorePerSecondText: {fileID: 903436574}
+  scoreCounter: {fileID: 1555261986}
   animator: {fileID: 1463965084}
   particleSystem: {fileID: 1341103376}
   progressBar: {fileID: 2081394636}
-  score: 0
   powerClick: 1
-  scorePerSecond: 0
 --- !u!95 &1463965084
 Animator:
   serializedVersion: 7
@@ -8818,6 +8907,51 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1549895860}
   m_CullTransparentMesh: 1
+--- !u!1 &1555261985
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1555261987}
+  - component: {fileID: 1555261986}
+  m_Layer: 0
+  m_Name: ScoreCounter
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1555261986
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1555261985}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f2427989d9be31f43aae0a66bd4c0c3d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  score: 0
+--- !u!4 &1555261987
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1555261985}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1130592471}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1615096787
 GameObject:
   m_ObjectHideFlags: 0
@@ -9864,9 +9998,17 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1463965083}
     - target: {fileID: 482631610344835962, guid: 9414ac6509b8cfa418bd9e5a2e7e5a67, type: 3}
+      propertyPath: scoreCounter
+      value: 
+      objectReference: {fileID: 1555261986}
+    - target: {fileID: 482631610344835962, guid: 9414ac6509b8cfa418bd9e5a2e7e5a67, type: 3}
       propertyPath: increaseValue
       value: 5
       objectReference: {fileID: 0}
+    - target: {fileID: 482631610344835962, guid: 9414ac6509b8cfa418bd9e5a2e7e5a67, type: 3}
+      propertyPath: scorePerSecondManager
+      value: 
+      objectReference: {fileID: 104020573}
     - target: {fileID: 1768472816823086124, guid: 9414ac6509b8cfa418bd9e5a2e7e5a67, type: 3}
       propertyPath: m_Name
       value: ScorePerSecondUpgradeButton (1)

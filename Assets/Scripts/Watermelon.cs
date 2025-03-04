@@ -1,31 +1,19 @@
-using System.Collections;
-using TMPro;
 using UnityEngine;
 
 public class Watermelon : MonoBehaviour
 {
-    public TMP_Text scoreText;
-    public TMP_Text scorePerSecondText;
-    public Animator animator;
-    public new ParticleSystem particleSystem;
-    public ProgressBar progressBar;
-    public double score;
-    public double powerClick;
-    public double scorePerSecond;
-        
-    private readonly int _click = Animator.StringToHash("Click");
+    [SerializeField] private ScoreCounter scoreCounter;
+    [SerializeField] private Animator animator;
+    [SerializeField] private new ParticleSystem particleSystem;
+    [SerializeField] private ProgressBar progressBar;
+    [SerializeField] private double powerClick;
 
-    private void Start()
-    {
-        StartCoroutine(PassiveScoreIncome());
-    }
+    private readonly int _click = Animator.StringToHash("Click");
 
     public void OnClick()
     {
-        score += powerClick;
-
-        scoreText.text = ScoreFormatter.Format(score);
-
+        scoreCounter.AddScore(powerClick);
+        
         animator.SetTrigger(_click);
 
         Vector3 newParticleSystemPosition = Camera.main!.ScreenToWorldPoint(Input.mousePosition);
@@ -35,18 +23,17 @@ public class Watermelon : MonoBehaviour
         particleSystem.Emit(1);
 
         progressBar.experience++;
-        
+
         progressBar.UpdateAppearance();
     }
-    
-    public IEnumerator PassiveScoreIncome()
+
+    public double GetPowerClick()
     {
-        WaitForSeconds waitForSeconds = new WaitForSeconds(1.0f);
-        while (true)
-        {
-            score += scorePerSecond;
-            scoreText.text = ScoreFormatter.Format(score);
-            yield return waitForSeconds;
-        }
+        return powerClick;
+    }
+
+    public void AddPowerClick(double value)
+    {
+        powerClick += value;
     }
 }

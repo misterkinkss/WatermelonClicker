@@ -1,20 +1,21 @@
 using TMPro;
+using UnityEngine;
 
 public class ClickPowerUpgradeButton : ShopButton
 {
-    public TMP_Text particleText;
-    public double increaseValue;
+    [SerializeField] private TMP_Text particleText;
+    [SerializeField] private Watermelon watermelon;
+    [SerializeField] private double increaseValue;
     
     public override void Buy()
     {
-        if (watermelon.score >= price)
+        if (scoreCounter.GetScore() >= price)
         {
-            watermelon.score -= price;
-            watermelon.powerClick += increaseValue;
+            scoreCounter.RemoveScore(price);
+            watermelon.AddPowerClick(increaseValue);
             price *= 1.5D;
             priceText.text = ScoreFormatter.Format(price);
-            watermelon.scoreText.text = ScoreFormatter.Format(watermelon.score);
-            particleText.text = "+" + ScoreFormatter.Format(watermelon.powerClick);
+            particleText.text = "+" + ScoreFormatter.Format(watermelon.GetPowerClick());
             decoration.SetActive(true);
         }
     }

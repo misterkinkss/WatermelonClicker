@@ -3,15 +3,18 @@ using UnityEngine;
 public class SettingsButtons : MonoBehaviour
 {
     public Animator animator;
-
-    public void OpenSettings()
+    
+    private static readonly int CloseSettings = Animator.StringToHash("CloseSettings");
+    private static readonly int OpenSettings = Animator.StringToHash("OpenSettings");
+    
+    public void Open()
     {
-        animator.SetTrigger("OpeningSettings");
+        animator.SetTrigger(OpenSettings);
     }
     
-    public void CloseSettings()
+    public void Close()
     {
-        animator.SetTrigger("ClosingSettings");
+        animator.SetTrigger(CloseSettings);
     }
     
 }

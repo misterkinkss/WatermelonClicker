@@ -3,10 +3,10 @@ using UnityEngine;
 
 public abstract class ShopButton : MonoBehaviour
 {
-    public Watermelon watermelon;
-    public TMP_Text priceText;
-    public GameObject decoration;
-    public double price;
+    [SerializeField] protected ScoreCounter scoreCounter;
+    [SerializeField] protected TMP_Text priceText;
+    [SerializeField] protected GameObject decoration;
+    [SerializeField] protected double price;
 
     public abstract void Buy();
 }
