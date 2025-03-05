@@ -16,13 +16,13 @@ public class ScoreCounter : MonoBehaviour
     {
         score += value;
         
-        OnScoreChanged.Invoke(score);
+        OnScoreChanged?.Invoke(score);
     }
 
     public void RemoveScore(double value)
     {
         score -= value;
         
-        OnScoreChanged.Invoke(score);
+        OnScoreChanged?.Invoke(score);
     }
 }

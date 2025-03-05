@@ -3,7 +3,7 @@ using UnityEngine;
 public class ScorePerSecondUpgradeButton : ShopButton 
 {
     [SerializeField] private ScorePerSecondManager scorePerSecondManager;
-    [SerializeField] private int increaseValue;
+    [SerializeField] private double increaseValue;
 
     public override void Buy()
     {

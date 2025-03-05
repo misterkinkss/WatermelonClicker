@@ -4,14 +4,19 @@ using UnityEngine;
 public class ScorePerSecondDisplayer : MonoBehaviour
 {
     [SerializeField] private TMP_Text scorePerSecondText;
+    
+    private void UpdateText(double score)
+    {
+        scorePerSecondText.text = ScoreFormatter.Format(score) + "в сек.";
+    }
 
-    private void Start()
+    private void OnEnable()
     {
         ScorePerSecondManager.OnScorePerSecondChanged += UpdateText;
     }
 
-    private void UpdateText(double score)
+    private void OnDisable()
     {
-        scorePerSecondText.text = ScoreFormatter.Format(score) + "в сек.";
+        ScorePerSecondManager.OnScorePerSecondChanged -= UpdateText;
     }
 }

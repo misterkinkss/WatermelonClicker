@@ -5,13 +5,18 @@ public class ScoreDisplayer : MonoBehaviour
 {
     [SerializeField] private TMP_Text scoreText;
 
-    private void Start()
+    private void UpdateText(double score)
+    {
+        scoreText.text = ScoreFormatter.Format(score);
+    }
+    
+    private void OnEnable()
     {
         ScoreCounter.OnScoreChanged += UpdateText;
     }
 
-    private void UpdateText(double score)
+    private void OnDisable()
     {
-        scoreText.text = ScoreFormatter.Format(score);
+        ScoreCounter.OnScoreChanged -= UpdateText;
     }
 }

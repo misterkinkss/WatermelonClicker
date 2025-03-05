@@ -18,7 +18,7 @@ public class ScorePerSecondManager : MonoBehaviour
     {
         scorePerSecond += value;
 
-        OnScorePerSecondChanged.Invoke(scorePerSecond);
+        OnScorePerSecondChanged?.Invoke(scorePerSecond);
     }
 
     private IEnumerator PassiveScoreIncome()
