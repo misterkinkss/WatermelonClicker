@@ -1,13 +1,19 @@
 using TMPro;
 using UnityEngine;
 
+[RequireComponent(typeof(TMP_Text))]
 public class ScorePerSecondDisplayer : MonoBehaviour
 {
-    [SerializeField] private TMP_Text scorePerSecondText;
+    private TMP_Text _scorePerSecondText;
+    
+    private void Awake()
+    {
+        _scorePerSecondText = GetComponent<TMP_Text>();
+    }
     
     private void UpdateText(double score)
     {
-        scorePerSecondText.text = ScoreFormatter.Format(score) + "в сек.";
+        _scorePerSecondText.text = ScoreFormatter.Format(score) + "в сек.";
     }
 
     private void OnEnable()

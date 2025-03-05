@@ -1,13 +1,19 @@
 using TMPro;
 using UnityEngine;
 
+[RequireComponent(typeof(TMP_Text))]
 public class ScoreDisplayer : MonoBehaviour
 {
-    [SerializeField] private TMP_Text scoreText;
+    private TMP_Text _scoreText;
+
+    private void Awake()
+    {
+        _scoreText = GetComponent<TMP_Text>();
+    }
 
     private void UpdateText(double score)
     {
-        scoreText.text = ScoreFormatter.Format(score);
+        _scoreText.text = ScoreFormatter.Format(score);
     }
     
     private void OnEnable()

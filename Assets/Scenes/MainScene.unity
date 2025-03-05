@@ -2092,7 +2092,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 940c6d109b3206b42a2f07da0011a166, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scoreText: {fileID: 700036293}
 --- !u!1 &731905852
 GameObject:
   m_ObjectHideFlags: 0
@@ -2942,7 +2941,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ff3993d35c4e78d4595fc183035ce5da, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scorePerSecondText: {fileID: 903436574}
 --- !u!224 &921831854 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 8430452371162064652, guid: 9414ac6509b8cfa418bd9e5a2e7e5a67, type: 3}
