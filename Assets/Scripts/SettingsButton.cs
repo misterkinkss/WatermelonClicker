@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class SettingsButtons : MonoBehaviour
+public class SettingsButton : MonoBehaviour
 {
     public Animator animator;
     

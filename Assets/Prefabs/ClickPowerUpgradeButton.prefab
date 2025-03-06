@@ -63,11 +63,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5759c9dfbdf890f40afdc8efd73f37f5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  watermelon: {fileID: 0}
+  scoreCounter: {fileID: 0}
   priceText: {fileID: 7655428484239365473}
   decoration: {fileID: 0}
   price: 0
   particleText: {fileID: 0}
+  watermelon: {fileID: 0}
   increaseValue: 0
 --- !u!114 &48543362994168391
 MonoBehaviour:
@@ -325,8 +326,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -114.8, y: 27.4}
-  m_SizeDelta: {x: 521.6851, y: 153.2902}
+  m_AnchoredPosition: {x: -114.8, y: 38.19}
+  m_SizeDelta: {x: 521.6851, y: 131.71}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &4881975726115716944
 CanvasRenderer:
@@ -384,15 +385,15 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 63.09
+  m_fontSize: 63.6
   m_fontSizeBase: 63.09
   m_fontWeight: 400
-  m_enableAutoSizing: 0
+  m_enableAutoSizing: 1
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
   m_HorizontalAlignment: 1
-  m_VerticalAlignment: 256
+  m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 5.6
   m_wordSpacing: 0
