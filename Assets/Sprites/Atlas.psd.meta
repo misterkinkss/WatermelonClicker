@@ -508,7 +508,7 @@ TextureImporter:
         width: 107
         height: 108
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 45, y: 45, z: 44, w: 44}
       customData: 
       outline: []
@@ -517,6 +517,72 @@ TextureImporter:
       bones: []
       spriteID: 226aa0e0c669b044284ab5d800657215
       internalID: -1454797908
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atlas_18
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 721
+        width: 205
+        height: 121
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a6ed33fad4e9da41b53926d158accb4
+      internalID: 1098219611
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atlas_19
+      rect:
+        serializedVersion: 2
+        x: 223
+        y: 716
+        width: 102
+        height: 157
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac3f5df077f558043894c412be99e0a6
+      internalID: -1175348767
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atlas_20
+      rect:
+        serializedVersion: 2
+        x: 331
+        y: 722
+        width: 237
+        height: 170
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e12aa61b0bdaae4b81a8ce6bdf6c5b1
+      internalID: 1851076464
       vertices: []
       indices: 
       edges: []
@@ -545,7 +611,10 @@ TextureImporter:
       Atlas_15: 575003622
       Atlas_16: 458111079
       Atlas_17: -1454797908
+      Atlas_18: 1098219611
+      Atlas_19: -1175348767
       Atlas_2: 110626100
+      Atlas_20: 1851076464
       Atlas_3: -330550336
       Atlas_4: 696347083
       Atlas_5: -1896160287
