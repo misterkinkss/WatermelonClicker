@@ -16,7 +16,6 @@ public class ClickPowerUpgradeButton : ShopButton
             price *= 1.5D;
             priceText.text = ScoreFormatter.Format(price);
             particleText.text = "+" + ScoreFormatter.Format(watermelon.GetPowerClick());
-            decoration.SetActive(true);
         }
     }
 }
