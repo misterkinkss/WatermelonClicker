@@ -772,7 +772,7 @@ TextureImporter:
         width: 95
         height: 143
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -781,6 +781,50 @@ TextureImporter:
       bones: []
       spriteID: 8e30df03d2d4b664098d7b108450328d
       internalID: 1198946613
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atlas_30
+      rect:
+        serializedVersion: 2
+        x: 661
+        y: 892
+        width: 177
+        height: 156
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 623b051b0b62a2b4fa37135e35e8ec12
+      internalID: 193252230
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atlas_31
+      rect:
+        serializedVersion: 2
+        x: 846
+        y: 895
+        width: 192
+        height: 150
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 05cdb4def89cea54caed08ed1e1c13f9
+      internalID: -1805927598
       vertices: []
       indices: 
       edges: []
@@ -823,6 +867,8 @@ TextureImporter:
       Atlas_28: 2103670422
       Atlas_29: 1198946613
       Atlas_3: -330550336
+      Atlas_30: 193252230
+      Atlas_31: -1805927598
       Atlas_4: 696347083
       Atlas_5: -1896160287
       Atlas_6: 303478190
