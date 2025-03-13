@@ -35,41 +35,41 @@ MonoBehaviour:
     m_StrikethroughOffset: 0
     m_StrikethroughThickness: 0
     m_TabWidth: 0
-  m_Material: {fileID: 5669459631911262336}
+  m_Material: {fileID: 4265667236553378874}
   spriteSheet: {fileID: 2800000, guid: ea460dd7dcca0984e9fdf3fe4b6649b5, type: 3}
   m_SpriteCharacterTable:
   - m_ElementType: 2
     m_Unicode: 65534
     m_GlyphIndex: 0
     m_Scale: 1
-    m_Name: Seed_0
+    m_Name: seed_0
   m_GlyphTable:
   - m_Index: 0
     m_Metrics:
-      m_Width: 356
-      m_Height: 548
-      m_HorizontalBearingX: -71.200005
-      m_HorizontalBearingY: 493.2
-      m_HorizontalAdvance: 356
+      m_Width: 247
+      m_Height: 338
+      m_HorizontalBearingX: -29.64
+      m_HorizontalBearingY: 307.58
+      m_HorizontalAdvance: 247
     m_GlyphRect:
       m_X: 0
       m_Y: 0
-      m_Width: 356
-      m_Height: 548
+      m_Width: 247
+      m_Height: 338
     m_Scale: 1
     m_AtlasIndex: 0
     m_ClassDefinitionType: 0
-    sprite: {fileID: -7866928900747384746, guid: ea460dd7dcca0984e9fdf3fe4b6649b5, type: 3}
+    sprite: {fileID: 3124949146848436715, guid: ea460dd7dcca0984e9fdf3fe4b6649b5, type: 3}
   spriteInfoList: []
   fallbackSpriteAssets: []
---- !u!21 &5669459631911262336
+--- !u!21 &4265667236553378874
 Material:
   serializedVersion: 8
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Seed Material
+  m_Name: seed Material
   m_Shader: {fileID: 4800000, guid: cf81c85f95fe47e1a27f6ae460cf182c, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0

@@ -816,7 +816,7 @@ TextureImporter:
         width: 192
         height: 150
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -869,6 +869,7 @@ TextureImporter:
       Atlas_3: -330550336
       Atlas_30: 193252230
       Atlas_31: -1805927598
+      Atlas_32: 242156883
       Atlas_4: 696347083
       Atlas_5: -1896160287
       Atlas_6: 303478190
