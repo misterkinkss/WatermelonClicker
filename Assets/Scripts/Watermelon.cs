@@ -12,7 +12,7 @@ public class Watermelon : MonoBehaviour
 
     public void OnClick()
     {
-        scoreCounter.AddScore(powerClick);
+        scoreCounter.Score += powerClick;
         
         animator.SetTrigger(_click);
 

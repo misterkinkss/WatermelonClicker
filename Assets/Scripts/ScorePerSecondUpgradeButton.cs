@@ -7,10 +7,10 @@ public class ScorePerSecondUpgradeButton : ShopButton
 
     public override void Buy()
     {
-        if (scoreCounter.GetScore() >= price)
+        if (scoreCounter.Score >= price)
         {
-            scoreCounter.RemoveScore(price);
-            scorePerSecondManager.AddScorePerSecond(increaseValue);
+            scoreCounter.Score -= price;
+            scorePerSecondManager.ScorePerSecond += increaseValue;
             price *= 1.2D;
             priceText.text = ScoreFormatter.Format(price);
         }

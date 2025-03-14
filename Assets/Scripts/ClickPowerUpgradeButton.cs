@@ -9,9 +9,9 @@ public class ClickPowerUpgradeButton : ShopButton
     
     public override void Buy()
     {
-        if (scoreCounter.GetScore() >= price)
+        if (scoreCounter.Score >= price)
         {
-            scoreCounter.RemoveScore(price);
+            scoreCounter.Score -= price;
             watermelon.AddPowerClick(increaseValue);
             price *= 1.5D;
             priceText.text = ScoreFormatter.Format(price);

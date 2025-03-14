@@ -5,24 +5,16 @@ public class ScoreCounter : MonoBehaviour
 {
     public static event Action<double> OnScoreChanged;
     
-    [SerializeField] private double score;
-    
-    public double GetScore()
-    {
-        return score;
-    }
-    
-    public void AddScore(double value)
-    {
-        score += value;
-        
-        OnScoreChanged?.Invoke(score);
-    }
+    private double _score;
 
-    public void RemoveScore(double value)
+    public double Score
     {
-        score -= value;
-        
-        OnScoreChanged?.Invoke(score);
+        get => _score;
+        set
+        {
+            _score = value;
+            
+            OnScoreChanged?.Invoke(_score);
+        }
     }
 }

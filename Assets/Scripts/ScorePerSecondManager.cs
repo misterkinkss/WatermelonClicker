@@ -7,26 +7,31 @@ public class ScorePerSecondManager : MonoBehaviour
     public static event Action<double> OnScorePerSecondChanged;
 
     [SerializeField] private ScoreCounter scoreCounter;
-    [SerializeField] private double scorePerSecond;
+    
+    private double _scorePerSecond;
 
     private void Start()
     {
         StartCoroutine(PassiveScoreIncome());
     }
-
-    public void AddScorePerSecond(double value)
+    
+    public double ScorePerSecond
     {
-        scorePerSecond += value;
-
-        OnScorePerSecondChanged?.Invoke(scorePerSecond);
+        get => _scorePerSecond;
+        set
+        {
+            _scorePerSecond = value;
+            
+            OnScorePerSecondChanged?.Invoke(_scorePerSecond);
+        }
     }
-
+    
     private IEnumerator PassiveScoreIncome()
     {
         WaitForSeconds waitForSeconds = new WaitForSeconds(1.0f);
         while (true)
         {
-            scoreCounter.AddScore(scorePerSecond);
+            scoreCounter.Score += _scorePerSecond;
             yield return waitForSeconds;
         }
     }
