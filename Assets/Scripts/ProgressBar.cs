@@ -1,77 +1,47 @@
-using System.Collections;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
 public class ProgressBar : MonoBehaviour
 {
-    public Image fillingImage;
-    public Image watermelonImage;
-    public TMP_Text levelText;
-    public RectTransform watermelonRectTransform;
-    public Sprite[] evolutionStageSprites;
-    public Animator animator;
-    public int[] requiredNextLevelClicks;
-    public int level;
-    public int experience;
+    [SerializeField] private Sprite[] evolutionStageSprites;
+    [SerializeField] private Image fillingImage;
+    [SerializeField] private Image watermelonImage;
+    [SerializeField] private TMP_Text levelText;
+    [SerializeField] private RectTransform watermelonRectTransform;
+    [SerializeField] private Animator animator;
+    [SerializeField] private ExperienceLevelCounter experienceLevelCounter;
 
     private readonly int _flash = Animator.StringToHash("Flash");
-    
-    private void Start()
+
+    private void Update()
     {
-        StartCoroutine(SmoothIncrease());
+        fillingImage.fillAmount = Mathf.Lerp(fillingImage.fillAmount, (float)experienceLevelCounter.Experience / experienceLevelCounter.GetCurrentRequiredNextLevelClicks(),0.01f);
     }
 
-    public IEnumerator SmoothIncrease()
+    private void UpdateAppearance()
     {
-        float step = 1.0f / requiredNextLevelClicks[level] / 25.0f;
-
-        while (true)
+        if (experienceLevelCounter.Level != experienceLevelCounter.GetLengthRequiredNextLevelClicks())
         {
-            if (level == requiredNextLevelClicks.Length) break;
-            
-            if (fillingImage.fillAmount < (float)experience / requiredNextLevelClicks[level])
-            {
-                fillingImage.fillAmount += step;
-            }
-
-            yield return new WaitForSeconds(0.01f);
+            levelText.text = "УРОВЕНЬ " + experienceLevelCounter.Level;
+            watermelonImage.sprite = evolutionStageSprites[experienceLevelCounter.Level];
+            animator.SetTrigger(_flash);
         }
-    }
-
-    public IEnumerator SmoothReset()
-    {
-        while (fillingImage.fillAmount > 0.0f)
-        {
-            fillingImage.fillAmount -= 0.01f;
-            yield return new WaitForSeconds(0.01f);
-        }
-    }
-
-    public void UpdateAppearance()
-    {
-        if (level != requiredNextLevelClicks.Length)
-        {
-            if (experience >= requiredNextLevelClicks[level])
-            {
-                experience = 0;
-                level += 1;
-                levelText.text = "УРОВЕНЬ " + level;
-                watermelonImage.sprite = evolutionStageSprites[level];
-                animator.SetTrigger(_flash);
-                
-                if (level != requiredNextLevelClicks.Length)
-                {
-                    StartCoroutine(SmoothReset());
-                }
-            }
-        }
-
-        if (level == requiredNextLevelClicks.Length)
+        else
         {
             levelText.text = "МАКС. УРОВЕНЬ";
             fillingImage.fillAmount = 1.0f;
             watermelonRectTransform.sizeDelta = new Vector2(740.5f, 740.5f);
         }
+    }
+
+    private void OnEnable()
+    {
+        ExperienceLevelCounter.OnLevelUp += UpdateAppearance;
+    }
+
+    private void OnDisable()
+    {
+        ExperienceLevelCounter.OnLevelUp -= UpdateAppearance;
     }
 }

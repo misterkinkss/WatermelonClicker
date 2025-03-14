@@ -714,7 +714,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scoreCounter: {fileID: 1555261986}
-  scorePerSecond: 0
 --- !u!1001 &110021615
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3476,7 +3475,53 @@ Transform:
   - {fileID: 57022411}
   - {fileID: 1555261987}
   - {fileID: 104020572}
+  - {fileID: 1166117657}
   m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1166117655
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1166117657}
+  - component: {fileID: 1166117656}
+  m_Layer: 0
+  m_Name: ExperienceLevelCounter
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1166117656
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1166117655}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9225de4ac6cec204a9b44fa7d4573eb6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  requiredNextLevelClicks: 0a0000005a000000c8000000900100005802000020030000e8030000b0040000
+--- !u!4 &1166117657
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1166117655}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1130592471}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!224 &1190474151 stripped
 RectTransform:
@@ -9282,7 +9327,7 @@ MonoBehaviour:
   scoreCounter: {fileID: 1555261986}
   animator: {fileID: 1463965084}
   particleSystem: {fileID: 1341103376}
-  progressBar: {fileID: 2081394636}
+  experienceLevelCounter: {fileID: 1166117656}
   powerClick: 1
 --- !u!95 &1463965084
 Animator:
@@ -9686,7 +9731,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f2427989d9be31f43aae0a66bd4c0c3d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  score: 0
 --- !u!4 &1555261987
 Transform:
   m_ObjectHideFlags: 0
@@ -11132,10 +11176,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2317659e6755ebf40b2acb5c5cbd9a6c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fillingImage: {fileID: 1456696768}
-  watermelonImage: {fileID: 1463965081}
-  levelText: {fileID: 471313951}
-  watermelonRectTransform: {fileID: 1463965079}
   evolutionStageSprites:
   - {fileID: 4018074224661003100, guid: bd94fb180d158a447b6a201959f6f43e, type: 3}
   - {fileID: 948988277, guid: bd94fb180d158a447b6a201959f6f43e, type: 3}
@@ -11146,10 +11186,12 @@ MonoBehaviour:
   - {fileID: 303478190, guid: bd94fb180d158a447b6a201959f6f43e, type: 3}
   - {fileID: -427615644, guid: bd94fb180d158a447b6a201959f6f43e, type: 3}
   - {fileID: -54898317, guid: bd94fb180d158a447b6a201959f6f43e, type: 3}
+  fillingImage: {fileID: 1456696768}
+  watermelonImage: {fileID: 1463965081}
+  levelText: {fileID: 471313951}
+  watermelonRectTransform: {fileID: 1463965079}
   animator: {fileID: 259549061}
-  requiredNextLevelClicks: 0a0000005a000000c8000000900100005802000020030000e8030000b0040000
-  level: 0
-  experience: 0
+  experienceLevelCounter: {fileID: 1166117656}
 --- !u!222 &2081394637
 CanvasRenderer:
   m_ObjectHideFlags: 0

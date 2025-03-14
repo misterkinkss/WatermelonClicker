@@ -5,7 +5,7 @@ public class Watermelon : MonoBehaviour
     [SerializeField] private ScoreCounter scoreCounter;
     [SerializeField] private Animator animator;
     [SerializeField] private new ParticleSystem particleSystem;
-    [SerializeField] private ProgressBar progressBar;
+    [SerializeField] private ExperienceLevelCounter experienceLevelCounter;
     [SerializeField] private double powerClick;
 
     private readonly int _click = Animator.StringToHash("Click");
@@ -22,9 +22,7 @@ public class Watermelon : MonoBehaviour
 
         particleSystem.Emit(1);
 
-        progressBar.experience++;
-
-        progressBar.UpdateAppearance();
+        experienceLevelCounter.Experience++;
     }
 
     public double GetPowerClick()
