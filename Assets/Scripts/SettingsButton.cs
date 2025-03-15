@@ -2,10 +2,10 @@ using UnityEngine;
 
 public class SettingsButton : MonoBehaviour
 {
-    public Animator animator;
-    
     private static readonly int CloseSettings = Animator.StringToHash("CloseSettings");
     private static readonly int OpenSettings = Animator.StringToHash("OpenSettings");
+    
+    public Animator animator;
     
     public void Open()
     {
