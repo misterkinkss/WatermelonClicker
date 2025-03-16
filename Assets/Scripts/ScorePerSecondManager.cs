@@ -28,11 +28,10 @@ public class ScorePerSecondManager : MonoBehaviour
     
     private IEnumerator PassiveScoreIncome()
     {
-        WaitForSeconds waitForSeconds = new WaitForSeconds(1.0f);
         while (true)
         {
-            scoreCounter.Score += _scorePerSecond;
-            yield return waitForSeconds;
+            scoreCounter.Score = Mathf.Lerp((float) scoreCounter.Score, (float) (scoreCounter.Score + _scorePerSecond), 1.0f * Time.deltaTime);
+            yield return null;
         }
     }
 }
