@@ -1,15 +1,17 @@
 using System;
 using UnityEngine;
+using UnityEngine.Serialization;
 
 public class ExperienceLevelCounter : MonoBehaviour
 {
     public static event Action OnLevelUp;
     
-    [SerializeField] private int[] requiredNextLevelClicks;
+    [SerializeField] private RequiredNextLevelClicksData requiredNextLevelClicksData;
     
     private int _experience;
 
-    public int MaxLevel => requiredNextLevelClicks.Length;
+    public int MaxLevel => requiredNextLevelClicksData.MaxLevel;
+    
     public int Level { get; private set; }
     
     public int Experience
@@ -22,7 +24,7 @@ public class ExperienceLevelCounter : MonoBehaviour
             if (Level == MaxLevel) 
                 return;
             
-            if (_experience >= requiredNextLevelClicks[Level])
+            if (_experience >= requiredNextLevelClicksData.RequiredNextLevelClicks[Level])
             {
                 LevelUp();
             }
@@ -31,7 +33,7 @@ public class ExperienceLevelCounter : MonoBehaviour
 
     public int GetCurrentRequiredNextLevelClicks()
     {
-        return requiredNextLevelClicks[Level];
+        return requiredNextLevelClicksData.RequiredNextLevelClicks[Level];
     }
     
     private void LevelUp()

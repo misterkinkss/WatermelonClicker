@@ -22,13 +22,12 @@ public class ProgressBar : MonoBehaviour
         }
     }
 
-    private void UpdateAppearance()
+    private void OnLevelUp()
     {
         if (experienceLevelCounter.Level != experienceLevelCounter.MaxLevel)
         {
             levelText.text = "Уровень " + experienceLevelCounter.Level;
             watermelonImage.sprite = evolutionStageSprites[experienceLevelCounter.Level];
-            animator.SetTrigger(_flash);
         }
         else
         {
@@ -37,15 +36,17 @@ public class ProgressBar : MonoBehaviour
             watermelonImage.sprite = evolutionStageSprites[experienceLevelCounter.MaxLevel];
             watermelonRectTransform.sizeDelta = new Vector2(740.5f, 740.5f);
         }
+        
+        animator.SetTrigger(_flash);
     }
 
     private void OnEnable()
     {
-        ExperienceLevelCounter.OnLevelUp += UpdateAppearance;
+        ExperienceLevelCounter.OnLevelUp += OnLevelUp;
     }
 
     private void OnDisable()
     {
-        ExperienceLevelCounter.OnLevelUp -= UpdateAppearance;
+        ExperienceLevelCounter.OnLevelUp -= OnLevelUp;
     }
 }
