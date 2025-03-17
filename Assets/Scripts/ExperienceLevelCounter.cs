@@ -8,7 +8,8 @@ public class ExperienceLevelCounter : MonoBehaviour
     [SerializeField] private int[] requiredNextLevelClicks;
     
     private int _experience;
-    
+
+    public int MaxLevel => requiredNextLevelClicks.Length;
     public int Level { get; private set; }
     
     public int Experience
@@ -17,7 +18,10 @@ public class ExperienceLevelCounter : MonoBehaviour
         set
         {
             _experience = value;
-
+            
+            if (Level == MaxLevel) 
+                return;
+            
             if (_experience >= requiredNextLevelClicks[Level])
             {
                 LevelUp();
@@ -30,11 +34,6 @@ public class ExperienceLevelCounter : MonoBehaviour
         return requiredNextLevelClicks[Level];
     }
     
-    public int GetLengthRequiredNextLevelClicks()
-    {
-        return requiredNextLevelClicks.Length;
-    }
-
     private void LevelUp()
     {
         Experience = 0;

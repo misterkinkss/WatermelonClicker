@@ -16,21 +16,25 @@ public class ProgressBar : MonoBehaviour
 
     private void Update()
     {
-        fillingImage.fillAmount = Mathf.Lerp(fillingImage.fillAmount, (float)experienceLevelCounter.Experience / experienceLevelCounter.GetCurrentRequiredNextLevelClicks(),0.01f);
+        if (experienceLevelCounter.Level != experienceLevelCounter.MaxLevel)
+        {
+          fillingImage.fillAmount = Mathf.Lerp(fillingImage.fillAmount, (float)experienceLevelCounter.Experience / experienceLevelCounter.GetCurrentRequiredNextLevelClicks(),0.01f);  
+        }
     }
 
     private void UpdateAppearance()
     {
-        if (experienceLevelCounter.Level != experienceLevelCounter.GetLengthRequiredNextLevelClicks())
+        if (experienceLevelCounter.Level != experienceLevelCounter.MaxLevel)
         {
-            levelText.text = "УРОВЕНЬ " + experienceLevelCounter.Level;
+            levelText.text = "Уровень " + experienceLevelCounter.Level;
             watermelonImage.sprite = evolutionStageSprites[experienceLevelCounter.Level];
             animator.SetTrigger(_flash);
         }
         else
         {
-            levelText.text = "МАКС. УРОВЕНЬ";
+            levelText.text = "Макс. Уровень";
             fillingImage.fillAmount = 1.0f;
+            watermelonImage.sprite = evolutionStageSprites[experienceLevelCounter.MaxLevel];
             watermelonRectTransform.sizeDelta = new Vector2(740.5f, 740.5f);
         }
     }

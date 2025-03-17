@@ -1633,8 +1633,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.00001049, y: 0.000011742}
-  m_SizeDelta: {x: 490.25, y: 59.57}
+  m_AnchoredPosition: {x: 0.00001049, y: 54}
+  m_SizeDelta: {x: 556.44, y: 59.57}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &471313951
 MonoBehaviour:
@@ -1656,7 +1656,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\u0423\u0420\u041E\u0412\u0415\u041D\u042C: 0"
+  m_text: "\u0423\u0440\u043E\u0432\u0435\u043D\u044C 0\n"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: ef73aa6a333180a429d6246f52057b48, type: 2}
   m_sharedMaterial: {fileID: -977557825752894630, guid: ef73aa6a333180a429d6246f52057b48, type: 2}
@@ -1678,22 +1678,22 @@ MonoBehaviour:
   m_spriteAsset: {fileID: 0}
   m_tintAllSprites: 0
   m_StyleSheet: {fileID: 0}
-  m_TextStyleHashCode: -1183493901
+  m_TextStyleHashCode: 1289867918
   m_overrideHtmlColors: 0
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 47.76
-  m_fontSizeBase: 47.76
+  m_fontSize: 80
+  m_fontSizeBase: 80
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 0
+  m_fontStyle: 1
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
   m_textAlignment: 65535
-  m_characterSpacing: 14.67
+  m_characterSpacing: -3
   m_wordSpacing: 0
   m_lineSpacing: 0
   m_lineSpacingMax: 0
@@ -1898,6 +1898,10 @@ PrefabInstance:
     - target: {fileID: 2401586258939767550, guid: 55cbafa2ab47efa46af253c6f59b1a81, type: 3}
       propertyPath: m_fontSize
       value: 72
+      objectReference: {fileID: 0}
+    - target: {fileID: 2401586258939767550, guid: 55cbafa2ab47efa46af253c6f59b1a81, type: 3}
+      propertyPath: m_fontStyle
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6767698453756767447, guid: 55cbafa2ab47efa46af253c6f59b1a81, type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -2920,11 +2924,11 @@ MonoBehaviour:
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 0
+  m_fontStyle: 1
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
   m_textAlignment: 65535
-  m_characterSpacing: 6
+  m_characterSpacing: 3.3
   m_wordSpacing: 0
   m_lineSpacing: 0
   m_lineSpacingMax: 0

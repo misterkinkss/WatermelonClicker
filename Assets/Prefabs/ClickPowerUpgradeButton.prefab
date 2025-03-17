@@ -65,9 +65,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   scoreCounter: {fileID: 0}
   priceText: {fileID: 7655428484239365473}
-  decoration: {fileID: 0}
   price: 0
-  particleText: {fileID: 0}
   watermelon: {fileID: 0}
   increaseValue: 0
 --- !u!114 &48543362994168391
@@ -190,8 +188,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 251.6, y: -55.1}
-  m_SizeDelta: {x: -546.1201, y: -104.0197}
+  m_AnchoredPosition: {x: 244.75357, y: -55.100006}
+  m_SizeDelta: {x: -532.4273, y: -104.0197}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &4539521232379923364
 CanvasRenderer:
@@ -254,7 +252,7 @@ MonoBehaviour:
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 0
+  m_fontStyle: 1
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
   m_textAlignment: 65535
@@ -538,8 +536,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -147.6, y: -55.1}
-  m_SizeDelta: {x: 439.9074, y: 54.8705}
+  m_AnchoredPosition: {x: -131.625, y: -55.1}
+  m_SizeDelta: {x: 471.8574, y: 54.8705}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &2023871470873589815
 CanvasRenderer:
@@ -602,7 +600,7 @@ MonoBehaviour:
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 0
+  m_fontStyle: 1
   m_HorizontalAlignment: 1
   m_VerticalAlignment: 256
   m_textAlignment: 65535
