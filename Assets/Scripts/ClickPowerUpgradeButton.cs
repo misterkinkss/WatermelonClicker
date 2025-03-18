@@ -13,6 +13,8 @@ public class ClickPowerUpgradeButton : ShopButton
             watermelon.PowerClick += increaseValue;
             price *= 1.5D;
             priceText.text = ScoreFormatter.Format(price);
+            
+            base.Buy();
         }
     }
 }

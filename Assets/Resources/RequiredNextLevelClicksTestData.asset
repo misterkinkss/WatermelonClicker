@@ -12,4 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 513f6228f99521449aac43133677caa2, type: 3}
   m_Name: RequiredNextLevelClicksTestData
   m_EditorClassIdentifier: 
-  requiredNextLevelClicks: 0a0000000a0000000a0000000a0000000a0000000a0000000a0000000a000000
+  requiredNextLevelClicks: 0100000001000000010000000100000001000000010000000100000001000000

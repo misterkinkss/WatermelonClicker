@@ -13,6 +13,8 @@ public class ScorePerSecondUpgradeButton : ShopButton
             scorePerSecondManager.ScorePerSecond += increaseValue;
             price *= 1.2D;
             priceText.text = ScoreFormatter.Format(price);
+            
+            base.Buy();
         }
     }
 }
