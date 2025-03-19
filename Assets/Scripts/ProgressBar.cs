@@ -1,5 +1,6 @@
 using TMPro;
 using UnityEngine;
+using UnityEngine.Serialization;
 using UnityEngine.UI;
 
 public class ProgressBar : MonoBehaviour
@@ -11,6 +12,7 @@ public class ProgressBar : MonoBehaviour
     [SerializeField] private RectTransform watermelonRectTransform;
     [SerializeField] private Animator animator;
     [SerializeField] private ExperienceLevelCounter experienceLevelCounter;
+    [SerializeField] private AudioSource audioSource;
 
     private readonly int _flash = Animator.StringToHash("Flash");
 
@@ -38,6 +40,7 @@ public class ProgressBar : MonoBehaviour
         }
         
         animator.SetTrigger(_flash);
+        audioSource.Play();
     }
 
     private void OnEnable()

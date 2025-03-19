@@ -11,6 +11,7 @@ public class Watermelon : MonoBehaviour
     [SerializeField] private Animator animator;
     [SerializeField] private new ParticleSystem particleSystem;
     [SerializeField] private ExperienceLevelCounter experienceLevelCounter;
+    [SerializeField] private AudioSource audioSource;
     
     private double _multiplier;
     private double _finalClick;
@@ -46,6 +47,8 @@ public class Watermelon : MonoBehaviour
         particleSystem.Emit(1);
 
         experienceLevelCounter.Experience++;
+        
+        audioSource.Play();
     }
     
     private void IncreaseMultiplier()

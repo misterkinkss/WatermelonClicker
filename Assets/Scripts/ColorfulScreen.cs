@@ -10,6 +10,7 @@ public class ColorfulScreen : MonoBehaviour
     public static event Action OnBonusEnded;
     
     [SerializeField] private Image colorfulScreenImage;
+    [SerializeField] private AudioSource audioSource;
     [SerializeField, Range(0, 1)] private float speed;
     [SerializeField, Range(0, 1)] private float alpha;
 
@@ -40,6 +41,7 @@ public class ColorfulScreen : MonoBehaviour
     {
         colorfulScreenImage.gameObject.SetActive(true);
         _isActive = true;
+        audioSource.Play();
         yield return new WaitForSeconds(12.5f);
         _isActive = false;
         colorfulScreenImage.gameObject.SetActive(false); 
