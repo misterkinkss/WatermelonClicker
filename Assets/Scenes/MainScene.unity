@@ -9526,11 +9526,11 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 24300002, guid: ff0fce3864cfa7646960dc454d5d6934, type: 2}
-  m_audioClip: {fileID: 8300000, guid: 15a20de486939534b9579633840558cd, type: 3}
-  m_Resource: {fileID: 8300000, guid: 15a20de486939534b9579633840558cd, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 5301dd6538ba81f44bf4ecce16b48f3d, type: 3}
+  m_Resource: {fileID: 8300000, guid: 5301dd6538ba81f44bf4ecce16b48f3d, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 1
-  m_Pitch: 1
+  m_Volume: 0.5
+  m_Pitch: 1.2
   Loop: 0
   Mute: 0
   Spatialize: 0
@@ -10182,7 +10182,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   colorfulScreen: {fileID: 2011700814}
   animator: {fileID: 1574092512}
-  fallingDropletCooldown: 10
+  fallingDropletCooldown: 100
 --- !u!1 &1615096787
 GameObject:
   m_ObjectHideFlags: 0
@@ -10382,7 +10382,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.0000429161, y: 439.355}
+  m_AnchoredPosition: {x: -0.0000429161, y: 439.3551}
   m_SizeDelta: {x: 818.49, y: 0}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!114 &1641560649
@@ -11599,7 +11599,7 @@ AudioSource:
   m_audioClip: {fileID: 8300000, guid: 4ae5376523a9f614281ae69f3d277126, type: 3}
   m_Resource: {fileID: 8300000, guid: 4ae5376523a9f614281ae69f3d277126, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 0.7
+  m_Volume: 0.58
   m_Pitch: 1
   Loop: 0
   Mute: 0
