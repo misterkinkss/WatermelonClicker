@@ -732,7 +732,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 482631610344835962, guid: 9414ac6509b8cfa418bd9e5a2e7e5a67, type: 3}
       propertyPath: price
-      value: 50
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 482631610344835962, guid: 9414ac6509b8cfa418bd9e5a2e7e5a67, type: 3}
       propertyPath: decoration
@@ -776,7 +776,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7655428484239365473, guid: 9414ac6509b8cfa418bd9e5a2e7e5a67, type: 3}
       propertyPath: m_text
-      value: 50 <sprite=0>
+      value: 15 <sprite=0>
       objectReference: {fileID: 0}
     - target: {fileID: 8257875683642172504, guid: 9414ac6509b8cfa418bd9e5a2e7e5a67, type: 3}
       propertyPath: m_Sprite
@@ -1912,7 +1912,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 617952891147493527, guid: 55cbafa2ab47efa46af253c6f59b1a81, type: 3}
       propertyPath: price
-      value: 30
+      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 617952891147493527, guid: 55cbafa2ab47efa46af253c6f59b1a81, type: 3}
       propertyPath: decoration
@@ -1957,6 +1957,10 @@ PrefabInstance:
     - target: {fileID: 6767698453756767447, guid: 55cbafa2ab47efa46af253c6f59b1a81, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: -55.100006
+      objectReference: {fileID: 0}
+    - target: {fileID: 7655428484239365473, guid: 55cbafa2ab47efa46af253c6f59b1a81, type: 3}
+      propertyPath: m_text
+      value: 100 <sprite=0>
       objectReference: {fileID: 0}
     - target: {fileID: 8257875683642172504, guid: 55cbafa2ab47efa46af253c6f59b1a81, type: 3}
       propertyPath: m_Sprite
@@ -2727,7 +2731,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 617952891147493527, guid: 55cbafa2ab47efa46af253c6f59b1a81, type: 3}
       propertyPath: price
-      value: 200
+      value: 10000
       objectReference: {fileID: 0}
     - target: {fileID: 617952891147493527, guid: 55cbafa2ab47efa46af253c6f59b1a81, type: 3}
       propertyPath: decoration
@@ -2751,7 +2755,7 @@ PrefabInstance:
       objectReference: {fileID: 1555261986}
     - target: {fileID: 617952891147493527, guid: 55cbafa2ab47efa46af253c6f59b1a81, type: 3}
       propertyPath: increaseValue
-      value: 5
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 1768472816823086124, guid: 55cbafa2ab47efa46af253c6f59b1a81, type: 3}
       propertyPath: m_Name
@@ -2772,7 +2776,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7655428484239365473, guid: 55cbafa2ab47efa46af253c6f59b1a81, type: 3}
       propertyPath: m_text
-      value: 200 <sprite=0>
+      value: 10K <sprite=0>
       objectReference: {fileID: 0}
     - target: {fileID: 8257875683642172504, guid: 55cbafa2ab47efa46af253c6f59b1a81, type: 3}
       propertyPath: m_Sprite
@@ -2888,7 +2892,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9201669614319405925, guid: 55cbafa2ab47efa46af253c6f59b1a81, type: 3}
       propertyPath: m_text
-      value: "+5 \u043A \u043A\u043B\u0438\u043A\u0443"
+      value: "+50 \u043A \u043A\u043B\u0438\u043A\u0443"
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2905,6 +2909,7 @@ GameObject:
   m_Component:
   - component: {fileID: 882356307}
   - component: {fileID: 882356309}
+  - component: {fileID: 882356310}
   - component: {fileID: 882356308}
   m_Layer: 5
   m_Name: Title
@@ -3031,6 +3036,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 882356306}
   m_CullTransparentMesh: 1
+--- !u!114 &882356310
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 882356306}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b15d47d5097e47648b0d3f0ce8e0edcd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ruText: "\u041C\u0410\u0413\u0410\u0417\u0418\u041D"
+  enText: STORE
 --- !u!1001 &896671915
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3284,8 +3303,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1549895862}
   m_HandleRect: {fileID: 1549895861}
   m_Direction: 2
-  m_Value: 1
-  m_Size: 0.26616007
+  m_Value: 0.717
+  m_Size: 0.26616004
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -3838,7 +3857,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 482631610344835962, guid: 9414ac6509b8cfa418bd9e5a2e7e5a67, type: 3}
       propertyPath: price
-      value: 1000
+      value: 110000
       objectReference: {fileID: 0}
     - target: {fileID: 482631610344835962, guid: 9414ac6509b8cfa418bd9e5a2e7e5a67, type: 3}
       propertyPath: decoration
@@ -3858,7 +3877,7 @@ PrefabInstance:
       objectReference: {fileID: 1555261986}
     - target: {fileID: 482631610344835962, guid: 9414ac6509b8cfa418bd9e5a2e7e5a67, type: 3}
       propertyPath: increaseValue
-      value: 20
+      value: 2000
       objectReference: {fileID: 0}
     - target: {fileID: 482631610344835962, guid: 9414ac6509b8cfa418bd9e5a2e7e5a67, type: 3}
       propertyPath: scorePerSecondManager
@@ -3882,7 +3901,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7655428484239365473, guid: 9414ac6509b8cfa418bd9e5a2e7e5a67, type: 3}
       propertyPath: m_text
-      value: 1K <sprite=0>
+      value: 110K <sprite=0>
       objectReference: {fileID: 0}
     - target: {fileID: 8257875683642172504, guid: 9414ac6509b8cfa418bd9e5a2e7e5a67, type: 3}
       propertyPath: m_Sprite
@@ -3982,7 +4001,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9201669614319405925, guid: 9414ac6509b8cfa418bd9e5a2e7e5a67, type: 3}
       propertyPath: m_text
-      value: "+20 \u0432 \u0441\u0435\u043A\u0443\u043D\u0434\u0443"
+      value: "+2K \u0432 \u0441\u0435\u043A\u0443\u043D\u0434\u0443"
       objectReference: {fileID: 0}
     - target: {fileID: 9201669614319405925, guid: 9414ac6509b8cfa418bd9e5a2e7e5a67, type: 3}
       propertyPath: m_fontSize
@@ -9653,7 +9672,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 617952891147493527, guid: 55cbafa2ab47efa46af253c6f59b1a81, type: 3}
       propertyPath: price
-      value: 600
+      value: 10000000
       objectReference: {fileID: 0}
     - target: {fileID: 617952891147493527, guid: 55cbafa2ab47efa46af253c6f59b1a81, type: 3}
       propertyPath: decoration
@@ -10394,25 +10413,25 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 1993714801}
   - {fileID: 1190474151}
-  - {fileID: 811205606}
+  - {fileID: 1993714801}
   - {fileID: 921831854}
-  - {fileID: 1497342187}
+  - {fileID: 811205606}
   - {fileID: 1335830081}
-  - {fileID: 43821934}
+  - {fileID: 1497342187}
   - {fileID: 1862992241}
-  - {fileID: 1073533963}
+  - {fileID: 43821934}
   - {fileID: 1911178869}
-  - {fileID: 1438204689}
+  - {fileID: 1073533963}
   - {fileID: 428338026}
-  - {fileID: 25904643}
+  - {fileID: 1438204689}
   - {fileID: 896671916}
+  - {fileID: 25904643}
   m_Father: {fileID: 613514541}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.0000429161, y: 439.4942}
+  m_AnchoredPosition: {x: -0.0000429161, y: 1125.3425}
   m_SizeDelta: {x: 818.49, y: 0}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!114 &1641560649
@@ -10600,6 +10619,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1646837666}
   - component: {fileID: 1646837669}
+  - component: {fileID: 1646837670}
   - component: {fileID: 1646837668}
   - component: {fileID: 1646837667}
   m_Layer: 5
@@ -10671,7 +10691,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1646837668}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1646837670}
+        m_TargetAssemblyTypeName: LanguageButton, Assembly-CSharp
+        m_MethodName: OnClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1646837668
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10710,6 +10742,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1646837665}
   m_CullTransparentMesh: 1
+--- !u!114 &1646837670
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1646837665}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d298ee94f8a40e941a0c76af7044277f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  image: {fileID: 1646837668}
+  enSprite: {fileID: 575003622, guid: bd94fb180d158a447b6a201959f6f43e, type: 3}
+  ruSprite: {fileID: 458111079, guid: bd94fb180d158a447b6a201959f6f43e, type: 3}
 --- !u!1 &1670804508
 GameObject:
   m_ObjectHideFlags: 0
@@ -11181,7 +11228,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 482631610344835962, guid: 9414ac6509b8cfa418bd9e5a2e7e5a67, type: 3}
       propertyPath: price
-      value: 250
+      value: 1500
       objectReference: {fileID: 0}
     - target: {fileID: 482631610344835962, guid: 9414ac6509b8cfa418bd9e5a2e7e5a67, type: 3}
       propertyPath: decoration
@@ -11201,7 +11248,7 @@ PrefabInstance:
       objectReference: {fileID: 1555261986}
     - target: {fileID: 482631610344835962, guid: 9414ac6509b8cfa418bd9e5a2e7e5a67, type: 3}
       propertyPath: increaseValue
-      value: 5
+      value: 25
       objectReference: {fileID: 0}
     - target: {fileID: 482631610344835962, guid: 9414ac6509b8cfa418bd9e5a2e7e5a67, type: 3}
       propertyPath: scorePerSecondManager
@@ -11225,7 +11272,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7655428484239365473, guid: 9414ac6509b8cfa418bd9e5a2e7e5a67, type: 3}
       propertyPath: m_text
-      value: 250 <sprite=0>
+      value: 1.5K <sprite=0>
       objectReference: {fileID: 0}
     - target: {fileID: 8257875683642172504, guid: 9414ac6509b8cfa418bd9e5a2e7e5a67, type: 3}
       propertyPath: m_Sprite
@@ -11337,7 +11384,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9201669614319405925, guid: 9414ac6509b8cfa418bd9e5a2e7e5a67, type: 3}
       propertyPath: m_text
-      value: "+5 \u0432 \u0441\u0435\u043A\u0443\u043D\u0434\u0443"
+      value: "+25 \u0432 \u0441\u0435\u043A\u0443\u043D\u0434\u0443"
       objectReference: {fileID: 0}
     - target: {fileID: 9201669614319405925, guid: 9414ac6509b8cfa418bd9e5a2e7e5a67, type: 3}
       propertyPath: m_fontSize

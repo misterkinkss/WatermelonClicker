@@ -5,7 +5,6 @@ using UnityEngine;
 public abstract class ShopButton : MonoBehaviour
 {
     [SerializeField] protected ScoreCounter scoreCounter;
-    [SerializeField] protected TMP_Text priceText;
     [SerializeField] protected AudioSource audioSource;
     [SerializeField] protected double price;
     

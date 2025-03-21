@@ -2,6 +2,7 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.Serialization;
 using UnityEngine.UI;
+using YG;
 
 public class ProgressBar : MonoBehaviour
 {
@@ -28,28 +29,56 @@ public class ProgressBar : MonoBehaviour
     {
         if (experienceLevelCounter.Level != experienceLevelCounter.MaxLevel)
         {
-            levelText.text = "Уровень " + experienceLevelCounter.Level;
             watermelonImage.sprite = evolutionStageSprites[experienceLevelCounter.Level];
         }
         else
         {
-            levelText.text = "Макс. Уровень";
             fillingImage.fillAmount = 1.0f;
             watermelonImage.sprite = evolutionStageSprites[experienceLevelCounter.MaxLevel];
             watermelonRectTransform.sizeDelta = new Vector2(740.5f, 740.5f);
         }
         
+        UpdateText(YG2.lang);
+        
         animator.SetTrigger(_flash);
         audioSource.Play();
     }
 
+    private void UpdateText(string language)
+    {
+        if (experienceLevelCounter.Level != experienceLevelCounter.MaxLevel)
+        {
+            if (language == "ru")
+            {
+                levelText.text = "Уровень " + experienceLevelCounter.Level;
+            }
+            else if (language == "en")
+            {
+                levelText.text = "Level " + experienceLevelCounter.Level;
+            }
+        }
+        else
+        {
+            if (language == "ru")
+            {
+                levelText.text = "Макс. Уровень";
+            }
+            else if (language == "en")
+            {
+                levelText.text = "Max. Level";
+            }
+        }
+    }
+    
     private void OnEnable()
     {
         ExperienceLevelCounter.OnLevelUp += OnLevelUp;
+        YG2.onSwitchLang += UpdateText;
     }
 
     private void OnDisable()
     {
         ExperienceLevelCounter.OnLevelUp -= OnLevelUp;
+        YG2.onSwitchLang -= UpdateText;
     }
 }

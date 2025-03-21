@@ -11,8 +11,6 @@ public class ClickPowerUpgradeButton : ShopButton
         {
             scoreCounter.Score -= price;
             watermelon.PowerClick += increaseValue;
-            price *= 1.5D;
-            priceText.text = ScoreFormatter.Format(price);
             
             base.Buy();
         }
