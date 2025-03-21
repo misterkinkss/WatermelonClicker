@@ -65,7 +65,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scoreCounter: {fileID: 0}
-  priceText: {fileID: 7655428484239365473}
   audioSource: {fileID: 0}
   price: 0
   scorePerSecondManager: {fileID: 0}
@@ -399,6 +398,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1888377244008543221}
   - component: {fileID: 4881975726115716944}
+  - component: {fileID: 9170697333751304550}
   - component: {fileID: 2401586258939767550}
   m_Layer: 5
   m_Name: Title
@@ -434,6 +434,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5987525311386836664}
   m_CullTransparentMesh: 1
+--- !u!114 &9170697333751304550
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5987525311386836664}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b15d47d5097e47648b0d3f0ce8e0edcd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ruText: 
+  enText: 
 --- !u!114 &2401586258939767550
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -611,6 +625,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6675430479740031232}
   - component: {fileID: 2023871470873589815}
+  - component: {fileID: 4133541730935456846}
   - component: {fileID: 9201669614319405925}
   m_Layer: 5
   m_Name: Description
@@ -646,6 +661,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8346723181149640210}
   m_CullTransparentMesh: 1
+--- !u!114 &4133541730935456846
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8346723181149640210}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b15d47d5097e47648b0d3f0ce8e0edcd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ruText: 
+  enText: 
 --- !u!114 &9201669614319405925
 MonoBehaviour:
   m_ObjectHideFlags: 0

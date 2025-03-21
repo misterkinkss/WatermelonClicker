@@ -210,9 +210,17 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1641560648}
     m_Modifications:
+    - target: {fileID: 326177099188933309, guid: 55cbafa2ab47efa46af253c6f59b1a81, type: 3}
+      propertyPath: enText
+      value: "+400\u0422 per click"
+      objectReference: {fileID: 0}
+    - target: {fileID: 326177099188933309, guid: 55cbafa2ab47efa46af253c6f59b1a81, type: 3}
+      propertyPath: ruText
+      value: "+400T \u043A \u043A\u043B\u0438\u043A"
+      objectReference: {fileID: 0}
     - target: {fileID: 617952891147493527, guid: 55cbafa2ab47efa46af253c6f59b1a81, type: 3}
       propertyPath: price
-      value: 100000
+      value: 5e+17
       objectReference: {fileID: 0}
     - target: {fileID: 617952891147493527, guid: 55cbafa2ab47efa46af253c6f59b1a81, type: 3}
       propertyPath: decoration
@@ -236,11 +244,19 @@ PrefabInstance:
       objectReference: {fileID: 1555261986}
     - target: {fileID: 617952891147493527, guid: 55cbafa2ab47efa46af253c6f59b1a81, type: 3}
       propertyPath: increaseValue
-      value: 300
+      value: 400000000000000
       objectReference: {fileID: 0}
     - target: {fileID: 1768472816823086124, guid: 55cbafa2ab47efa46af253c6f59b1a81, type: 3}
       propertyPath: m_Name
       value: ClickPowerUpgradeButton (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2122182895401145973, guid: 55cbafa2ab47efa46af253c6f59b1a81, type: 3}
+      propertyPath: enText
+      value: Reactor mixture
+      objectReference: {fileID: 0}
+    - target: {fileID: 2122182895401145973, guid: 55cbafa2ab47efa46af253c6f59b1a81, type: 3}
+      propertyPath: ruText
+      value: "\u0420\u0435\u0430\u043A\u0442\u043E\u0440\u043D\u0430\u044F \u0441\u043C\u0435\u0441\u044C"
       objectReference: {fileID: 0}
     - target: {fileID: 2401586258939767550, guid: 55cbafa2ab47efa46af253c6f59b1a81, type: 3}
       propertyPath: m_text
@@ -256,7 +272,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7655428484239365473, guid: 55cbafa2ab47efa46af253c6f59b1a81, type: 3}
       propertyPath: m_text
-      value: 100K <sprite=0>
+      value: 500Qa <sprite=0>
       objectReference: {fileID: 0}
     - target: {fileID: 8257875683642172504, guid: 55cbafa2ab47efa46af253c6f59b1a81, type: 3}
       propertyPath: m_Sprite
@@ -360,7 +376,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9201669614319405925, guid: 55cbafa2ab47efa46af253c6f59b1a81, type: 3}
       propertyPath: m_text
-      value: "+300 \u043A \u043A\u043B\u0438\u043A\u0443"
+      value: "+400T \u043A \u043A\u043B\u0438\u043A\u0443"
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -380,9 +396,17 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1641560648}
     m_Modifications:
+    - target: {fileID: 326177099188933309, guid: 55cbafa2ab47efa46af253c6f59b1a81, type: 3}
+      propertyPath: enText
+      value: +45M per click
+      objectReference: {fileID: 0}
+    - target: {fileID: 326177099188933309, guid: 55cbafa2ab47efa46af253c6f59b1a81, type: 3}
+      propertyPath: ruText
+      value: "+45M \u043A \u043A\u043B\u0438\u043A\u0443"
+      objectReference: {fileID: 0}
     - target: {fileID: 617952891147493527, guid: 55cbafa2ab47efa46af253c6f59b1a81, type: 3}
       propertyPath: price
-      value: 2000
+      value: 100000000
       objectReference: {fileID: 0}
     - target: {fileID: 617952891147493527, guid: 55cbafa2ab47efa46af253c6f59b1a81, type: 3}
       propertyPath: decoration
@@ -406,11 +430,19 @@ PrefabInstance:
       objectReference: {fileID: 1555261986}
     - target: {fileID: 617952891147493527, guid: 55cbafa2ab47efa46af253c6f59b1a81, type: 3}
       propertyPath: increaseValue
-      value: 30
+      value: 45000000
       objectReference: {fileID: 0}
     - target: {fileID: 1768472816823086124, guid: 55cbafa2ab47efa46af253c6f59b1a81, type: 3}
       propertyPath: m_Name
       value: ClickPowerUpgradeButton (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2122182895401145973, guid: 55cbafa2ab47efa46af253c6f59b1a81, type: 3}
+      propertyPath: enText
+      value: Live soil
+      objectReference: {fileID: 0}
+    - target: {fileID: 2122182895401145973, guid: 55cbafa2ab47efa46af253c6f59b1a81, type: 3}
+      propertyPath: ruText
+      value: "\u0416\u0438\u0432\u0430\u044F \u043F\u043E\u0447\u0432\u0430"
       objectReference: {fileID: 0}
     - target: {fileID: 2401586258939767550, guid: 55cbafa2ab47efa46af253c6f59b1a81, type: 3}
       propertyPath: m_text
@@ -426,7 +458,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7655428484239365473, guid: 55cbafa2ab47efa46af253c6f59b1a81, type: 3}
       propertyPath: m_text
-      value: 2K <sprite=0>
+      value: 100M <sprite=0>
       objectReference: {fileID: 0}
     - target: {fileID: 8257875683642172504, guid: 55cbafa2ab47efa46af253c6f59b1a81, type: 3}
       propertyPath: m_Sprite
@@ -522,7 +554,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9201669614319405925, guid: 55cbafa2ab47efa46af253c6f59b1a81, type: 3}
       propertyPath: m_text
-      value: "+30 \u043A \u043A\u043B\u0438\u043A\u0443"
+      value: "+45M \u043A \u043A\u043B\u0438\u043A\u0443"
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -770,6 +802,14 @@ PrefabInstance:
       propertyPath: m_fontSize
       value: 72
       objectReference: {fileID: 0}
+    - target: {fileID: 4133541730935456846, guid: 9414ac6509b8cfa418bd9e5a2e7e5a67, type: 3}
+      propertyPath: enText
+      value: +1 per second
+      objectReference: {fileID: 0}
+    - target: {fileID: 4133541730935456846, guid: 9414ac6509b8cfa418bd9e5a2e7e5a67, type: 3}
+      propertyPath: ruText
+      value: "+1 \u0432 \u0441\u0435\u043A\u0443\u043D\u0434\u0443"
+      objectReference: {fileID: 0}
     - target: {fileID: 6767698453756767447, guid: 9414ac6509b8cfa418bd9e5a2e7e5a67, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: -55.100006
@@ -873,6 +913,14 @@ PrefabInstance:
     - target: {fileID: 8969607837070845467, guid: 9414ac6509b8cfa418bd9e5a2e7e5a67, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 37.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 9170697333751304550, guid: 9414ac6509b8cfa418bd9e5a2e7e5a67, type: 3}
+      propertyPath: enText
+      value: Mini-garden
+      objectReference: {fileID: 0}
+    - target: {fileID: 9170697333751304550, guid: 9414ac6509b8cfa418bd9e5a2e7e5a67, type: 3}
+      propertyPath: ruText
+      value: "\u041C\u0438\u043D\u0438-\u043E\u0433\u043E\u0440\u043E\u0434"
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1456,7 +1504,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 482631610344835962, guid: 9414ac6509b8cfa418bd9e5a2e7e5a67, type: 3}
       propertyPath: price
-      value: 50000
+      value: 10000000000000
       objectReference: {fileID: 0}
     - target: {fileID: 482631610344835962, guid: 9414ac6509b8cfa418bd9e5a2e7e5a67, type: 3}
       propertyPath: decoration
@@ -1476,7 +1524,7 @@ PrefabInstance:
       objectReference: {fileID: 1555261986}
     - target: {fileID: 482631610344835962, guid: 9414ac6509b8cfa418bd9e5a2e7e5a67, type: 3}
       propertyPath: increaseValue
-      value: 250
+      value: 10000000000
       objectReference: {fileID: 0}
     - target: {fileID: 482631610344835962, guid: 9414ac6509b8cfa418bd9e5a2e7e5a67, type: 3}
       propertyPath: scorePerSecondManager
@@ -1494,13 +1542,21 @@ PrefabInstance:
       propertyPath: m_fontSize
       value: 72
       objectReference: {fileID: 0}
+    - target: {fileID: 4133541730935456846, guid: 9414ac6509b8cfa418bd9e5a2e7e5a67, type: 3}
+      propertyPath: enText
+      value: +10B per second
+      objectReference: {fileID: 0}
+    - target: {fileID: 4133541730935456846, guid: 9414ac6509b8cfa418bd9e5a2e7e5a67, type: 3}
+      propertyPath: ruText
+      value: "+10B \u0432 \u0441\u0435\u043A\u0443\u043D\u0434\u0443"
+      objectReference: {fileID: 0}
     - target: {fileID: 6767698453756767447, guid: 9414ac6509b8cfa418bd9e5a2e7e5a67, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: -55.100006
       objectReference: {fileID: 0}
     - target: {fileID: 7655428484239365473, guid: 9414ac6509b8cfa418bd9e5a2e7e5a67, type: 3}
       propertyPath: m_text
-      value: 50K <sprite=0>
+      value: 10T <sprite=0>
       objectReference: {fileID: 0}
     - target: {fileID: 8257875683642172504, guid: 9414ac6509b8cfa418bd9e5a2e7e5a67, type: 3}
       propertyPath: m_Sprite
@@ -1598,9 +1654,17 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 37.4
       objectReference: {fileID: 0}
+    - target: {fileID: 9170697333751304550, guid: 9414ac6509b8cfa418bd9e5a2e7e5a67, type: 3}
+      propertyPath: enText
+      value: Watermelon paradise
+      objectReference: {fileID: 0}
+    - target: {fileID: 9170697333751304550, guid: 9414ac6509b8cfa418bd9e5a2e7e5a67, type: 3}
+      propertyPath: ruText
+      value: "\u0410\u0440\u0431\u0443\u0437\u043D\u044B\u0439 \u0440\u0430\u0439"
+      objectReference: {fileID: 0}
     - target: {fileID: 9201669614319405925, guid: 9414ac6509b8cfa418bd9e5a2e7e5a67, type: 3}
       propertyPath: m_text
-      value: "+250 \u0432 \u0441\u0435\u043A\u0443\u043D\u0434\u0443"
+      value: "+10B \u0432 \u0441\u0435\u043A\u0443\u043D\u0434\u0443"
       objectReference: {fileID: 0}
     - target: {fileID: 9201669614319405925, guid: 9414ac6509b8cfa418bd9e5a2e7e5a67, type: 3}
       propertyPath: m_fontSize
@@ -1910,6 +1974,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1641560648}
     m_Modifications:
+    - target: {fileID: 326177099188933309, guid: 55cbafa2ab47efa46af253c6f59b1a81, type: 3}
+      propertyPath: enText
+      value: +1 per click
+      objectReference: {fileID: 0}
+    - target: {fileID: 326177099188933309, guid: 55cbafa2ab47efa46af253c6f59b1a81, type: 3}
+      propertyPath: ruText
+      value: "+1 \u043A \u043A\u043B\u0438\u043A\u0443"
+      objectReference: {fileID: 0}
     - target: {fileID: 617952891147493527, guid: 55cbafa2ab47efa46af253c6f59b1a81, type: 3}
       propertyPath: price
       value: 100
@@ -1941,6 +2013,14 @@ PrefabInstance:
     - target: {fileID: 1768472816823086124, guid: 55cbafa2ab47efa46af253c6f59b1a81, type: 3}
       propertyPath: m_Name
       value: ClickPowerUpgradeButton
+      objectReference: {fileID: 0}
+    - target: {fileID: 2122182895401145973, guid: 55cbafa2ab47efa46af253c6f59b1a81, type: 3}
+      propertyPath: enText
+      value: Fertilizer
+      objectReference: {fileID: 0}
+    - target: {fileID: 2122182895401145973, guid: 55cbafa2ab47efa46af253c6f59b1a81, type: 3}
+      propertyPath: ruText
+      value: "\u0423\u0434\u043E\u0431\u0440\u0435\u043D\u0438\u0435"
       objectReference: {fileID: 0}
     - target: {fileID: 2401586258939767550, guid: 55cbafa2ab47efa46af253c6f59b1a81, type: 3}
       propertyPath: m_text
@@ -2729,6 +2809,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1641560648}
     m_Modifications:
+    - target: {fileID: 326177099188933309, guid: 55cbafa2ab47efa46af253c6f59b1a81, type: 3}
+      propertyPath: enText
+      value: +50 per click
+      objectReference: {fileID: 0}
+    - target: {fileID: 326177099188933309, guid: 55cbafa2ab47efa46af253c6f59b1a81, type: 3}
+      propertyPath: ruText
+      value: "+50 \u043A \u043A\u043B\u0438\u043A\u0443"
+      objectReference: {fileID: 0}
     - target: {fileID: 617952891147493527, guid: 55cbafa2ab47efa46af253c6f59b1a81, type: 3}
       propertyPath: price
       value: 10000
@@ -2760,6 +2848,15 @@ PrefabInstance:
     - target: {fileID: 1768472816823086124, guid: 55cbafa2ab47efa46af253c6f59b1a81, type: 3}
       propertyPath: m_Name
       value: ClickPowerUpgradeButton (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2122182895401145973, guid: 55cbafa2ab47efa46af253c6f59b1a81, type: 3}
+      propertyPath: enText
+      value: Grandpa's secret recipe
+      objectReference: {fileID: 0}
+    - target: {fileID: 2122182895401145973, guid: 55cbafa2ab47efa46af253c6f59b1a81, type: 3}
+      propertyPath: ruText
+      value: "\u0421\u0435\u043A\u0440\u0435\u0442\u043D\u044B\u0439 \u0440\u0435\u0446\u0435\u043F\u0442
+        \u0434\u0435\u0434\u0430"
       objectReference: {fileID: 0}
     - target: {fileID: 2401586258939767550, guid: 55cbafa2ab47efa46af253c6f59b1a81, type: 3}
       propertyPath: m_text
@@ -3060,7 +3157,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 482631610344835962, guid: 9414ac6509b8cfa418bd9e5a2e7e5a67, type: 3}
       propertyPath: price
-      value: 200000
+      value: 5000000000000000
       objectReference: {fileID: 0}
     - target: {fileID: 482631610344835962, guid: 9414ac6509b8cfa418bd9e5a2e7e5a67, type: 3}
       propertyPath: decoration
@@ -3080,7 +3177,7 @@ PrefabInstance:
       objectReference: {fileID: 1555261986}
     - target: {fileID: 482631610344835962, guid: 9414ac6509b8cfa418bd9e5a2e7e5a67, type: 3}
       propertyPath: increaseValue
-      value: 500
+      value: 10000000000000
       objectReference: {fileID: 0}
     - target: {fileID: 482631610344835962, guid: 9414ac6509b8cfa418bd9e5a2e7e5a67, type: 3}
       propertyPath: scorePerSecondManager
@@ -3099,13 +3196,21 @@ PrefabInstance:
       propertyPath: m_fontSize
       value: 63.6
       objectReference: {fileID: 0}
+    - target: {fileID: 4133541730935456846, guid: 9414ac6509b8cfa418bd9e5a2e7e5a67, type: 3}
+      propertyPath: enText
+      value: +10T per second
+      objectReference: {fileID: 0}
+    - target: {fileID: 4133541730935456846, guid: 9414ac6509b8cfa418bd9e5a2e7e5a67, type: 3}
+      propertyPath: ruText
+      value: "+10T \u0432 \u0441\u0435\u043A\u0443\u043D\u0434\u0443"
+      objectReference: {fileID: 0}
     - target: {fileID: 6767698453756767447, guid: 9414ac6509b8cfa418bd9e5a2e7e5a67, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: -55.100006
       objectReference: {fileID: 0}
     - target: {fileID: 7655428484239365473, guid: 9414ac6509b8cfa418bd9e5a2e7e5a67, type: 3}
       propertyPath: m_text
-      value: 200K <sprite=0>
+      value: 5Qa <sprite=0>
       objectReference: {fileID: 0}
     - target: {fileID: 8257875683642172504, guid: 9414ac6509b8cfa418bd9e5a2e7e5a67, type: 3}
       propertyPath: m_Sprite
@@ -3203,9 +3308,18 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 37.4
       objectReference: {fileID: 0}
+    - target: {fileID: 9170697333751304550, guid: 9414ac6509b8cfa418bd9e5a2e7e5a67, type: 3}
+      propertyPath: enText
+      value: Space farm
+      objectReference: {fileID: 0}
+    - target: {fileID: 9170697333751304550, guid: 9414ac6509b8cfa418bd9e5a2e7e5a67, type: 3}
+      propertyPath: ruText
+      value: "\u041A\u043E\u0441\u043C\u0438\u0447\u0435\u0441\u043A\u0430\u044F
+        \u0444\u0435\u0440\u043C\u0430"
+      objectReference: {fileID: 0}
     - target: {fileID: 9201669614319405925, guid: 9414ac6509b8cfa418bd9e5a2e7e5a67, type: 3}
       propertyPath: m_text
-      value: "+500 \u0432 \u0441\u0435\u043A\u0443\u043D\u0434\u0443"
+      value: "+10T \u0432 \u0441\u0435\u043A\u0443\u043D\u0434\u0443"
       objectReference: {fileID: 0}
     - target: {fileID: 9201669614319405925, guid: 9414ac6509b8cfa418bd9e5a2e7e5a67, type: 3}
       propertyPath: m_fontSize
@@ -3303,7 +3417,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1549895862}
   m_HandleRect: {fileID: 1549895861}
   m_Direction: 2
-  m_Value: 0.717
+  m_Value: 0.46999997
   m_Size: 0.26616004
   m_NumberOfSteps: 0
   m_OnValueChanged:
@@ -3393,9 +3507,17 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1641560648}
     m_Modifications:
+    - target: {fileID: 326177099188933309, guid: 55cbafa2ab47efa46af253c6f59b1a81, type: 3}
+      propertyPath: enText
+      value: +800M per click
+      objectReference: {fileID: 0}
+    - target: {fileID: 326177099188933309, guid: 55cbafa2ab47efa46af253c6f59b1a81, type: 3}
+      propertyPath: ruText
+      value: "+800M \u043A \u043A\u043B\u0438\u043A\u0443"
+      objectReference: {fileID: 0}
     - target: {fileID: 617952891147493527, guid: 55cbafa2ab47efa46af253c6f59b1a81, type: 3}
       propertyPath: price
-      value: 8000
+      value: 100000000000
       objectReference: {fileID: 0}
     - target: {fileID: 617952891147493527, guid: 55cbafa2ab47efa46af253c6f59b1a81, type: 3}
       propertyPath: decoration
@@ -3419,11 +3541,19 @@ PrefabInstance:
       objectReference: {fileID: 1555261986}
     - target: {fileID: 617952891147493527, guid: 55cbafa2ab47efa46af253c6f59b1a81, type: 3}
       propertyPath: increaseValue
-      value: 75
+      value: 800000000
       objectReference: {fileID: 0}
     - target: {fileID: 1768472816823086124, guid: 55cbafa2ab47efa46af253c6f59b1a81, type: 3}
       propertyPath: m_Name
       value: ClickPowerUpgradeButton (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2122182895401145973, guid: 55cbafa2ab47efa46af253c6f59b1a81, type: 3}
+      propertyPath: enText
+      value: Nano-fertilizer
+      objectReference: {fileID: 0}
+    - target: {fileID: 2122182895401145973, guid: 55cbafa2ab47efa46af253c6f59b1a81, type: 3}
+      propertyPath: ruText
+      value: "\u041D\u0430\u043D\u043E-\u0443\u0434\u043E\u0431\u0440\u0435\u043D\u0438\u0435"
       objectReference: {fileID: 0}
     - target: {fileID: 2401586258939767550, guid: 55cbafa2ab47efa46af253c6f59b1a81, type: 3}
       propertyPath: m_text
@@ -3439,7 +3569,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7655428484239365473, guid: 55cbafa2ab47efa46af253c6f59b1a81, type: 3}
       propertyPath: m_text
-      value: "8\u041A <sprite=0>"
+      value: 100B <sprite=0>
       objectReference: {fileID: 0}
     - target: {fileID: 8257875683642172504, guid: 55cbafa2ab47efa46af253c6f59b1a81, type: 3}
       propertyPath: m_Sprite
@@ -3535,7 +3665,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9201669614319405925, guid: 55cbafa2ab47efa46af253c6f59b1a81, type: 3}
       propertyPath: m_text
-      value: "+75 \u043A \u043A\u043B\u0438\u043A\u0443"
+      value: "+800M \u043A \u043A\u043B\u0438\u043A\u0443"
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -3895,6 +4025,14 @@ PrefabInstance:
       propertyPath: m_fontSize
       value: 63.6
       objectReference: {fileID: 0}
+    - target: {fileID: 4133541730935456846, guid: 9414ac6509b8cfa418bd9e5a2e7e5a67, type: 3}
+      propertyPath: enText
+      value: +2K per second
+      objectReference: {fileID: 0}
+    - target: {fileID: 4133541730935456846, guid: 9414ac6509b8cfa418bd9e5a2e7e5a67, type: 3}
+      propertyPath: ruText
+      value: "+2K \u0432 \u0441\u0435\u043A\u0443\u043D\u0434\u0443"
+      objectReference: {fileID: 0}
     - target: {fileID: 6767698453756767447, guid: 9414ac6509b8cfa418bd9e5a2e7e5a67, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: -55.100006
@@ -3998,6 +4136,14 @@ PrefabInstance:
     - target: {fileID: 8969607837070845467, guid: 9414ac6509b8cfa418bd9e5a2e7e5a67, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 37.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 9170697333751304550, guid: 9414ac6509b8cfa418bd9e5a2e7e5a67, type: 3}
+      propertyPath: enText
+      value: Field plantation
+      objectReference: {fileID: 0}
+    - target: {fileID: 9170697333751304550, guid: 9414ac6509b8cfa418bd9e5a2e7e5a67, type: 3}
+      propertyPath: ruText
+      value: "\u041F\u043E\u043B\u0435\u0432\u0430\u044F \u043F\u043B\u0430\u043D\u0442\u0430\u0446\u0438\u044F"
       objectReference: {fileID: 0}
     - target: {fileID: 9201669614319405925, guid: 9414ac6509b8cfa418bd9e5a2e7e5a67, type: 3}
       propertyPath: m_text
@@ -9139,9 +9285,17 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1641560648}
     m_Modifications:
+    - target: {fileID: 326177099188933309, guid: 55cbafa2ab47efa46af253c6f59b1a81, type: 3}
+      propertyPath: enText
+      value: +300B per click
+      objectReference: {fileID: 0}
+    - target: {fileID: 326177099188933309, guid: 55cbafa2ab47efa46af253c6f59b1a81, type: 3}
+      propertyPath: ruText
+      value: "+300B \u043A \u043A\u043B\u0438\u043A\u0443"
+      objectReference: {fileID: 0}
     - target: {fileID: 617952891147493527, guid: 55cbafa2ab47efa46af253c6f59b1a81, type: 3}
       propertyPath: price
-      value: 25000
+      value: 250000000000000
       objectReference: {fileID: 0}
     - target: {fileID: 617952891147493527, guid: 55cbafa2ab47efa46af253c6f59b1a81, type: 3}
       propertyPath: decoration
@@ -9165,11 +9319,19 @@ PrefabInstance:
       objectReference: {fileID: 1555261986}
     - target: {fileID: 617952891147493527, guid: 55cbafa2ab47efa46af253c6f59b1a81, type: 3}
       propertyPath: increaseValue
-      value: 150
+      value: 300000000000
       objectReference: {fileID: 0}
     - target: {fileID: 1768472816823086124, guid: 55cbafa2ab47efa46af253c6f59b1a81, type: 3}
       propertyPath: m_Name
       value: ClickPowerUpgradeButton (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2122182895401145973, guid: 55cbafa2ab47efa46af253c6f59b1a81, type: 3}
+      propertyPath: enText
+      value: Magic elixir
+      objectReference: {fileID: 0}
+    - target: {fileID: 2122182895401145973, guid: 55cbafa2ab47efa46af253c6f59b1a81, type: 3}
+      propertyPath: ruText
+      value: "\u0412\u043E\u043B\u0448\u0435\u0431\u043D\u044B\u0439 \u044D\u043B\u0438\u043A\u0441\u0438\u0440"
       objectReference: {fileID: 0}
     - target: {fileID: 2401586258939767550, guid: 55cbafa2ab47efa46af253c6f59b1a81, type: 3}
       propertyPath: m_text
@@ -9185,7 +9347,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7655428484239365473, guid: 55cbafa2ab47efa46af253c6f59b1a81, type: 3}
       propertyPath: m_text
-      value: 25K <sprite=0>
+      value: 250T <sprite=0>
       objectReference: {fileID: 0}
     - target: {fileID: 8257875683642172504, guid: 55cbafa2ab47efa46af253c6f59b1a81, type: 3}
       propertyPath: m_Sprite
@@ -9289,7 +9451,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9201669614319405925, guid: 55cbafa2ab47efa46af253c6f59b1a81, type: 3}
       propertyPath: m_text
-      value: "+150 \u043A \u043A\u043B\u0438\u043A\u0443"
+      value: "+300B \u043A \u043A\u043B\u0438\u043A\u0443"
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -9670,9 +9832,17 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1641560648}
     m_Modifications:
+    - target: {fileID: 326177099188933309, guid: 55cbafa2ab47efa46af253c6f59b1a81, type: 3}
+      propertyPath: enText
+      value: +25K per click
+      objectReference: {fileID: 0}
+    - target: {fileID: 326177099188933309, guid: 55cbafa2ab47efa46af253c6f59b1a81, type: 3}
+      propertyPath: ruText
+      value: "+25K  \u043A \u043A\u043B\u0438\u043A\u0443"
+      objectReference: {fileID: 0}
     - target: {fileID: 617952891147493527, guid: 55cbafa2ab47efa46af253c6f59b1a81, type: 3}
       propertyPath: price
-      value: 10000000
+      value: 1000000
       objectReference: {fileID: 0}
     - target: {fileID: 617952891147493527, guid: 55cbafa2ab47efa46af253c6f59b1a81, type: 3}
       propertyPath: decoration
@@ -9696,11 +9866,20 @@ PrefabInstance:
       objectReference: {fileID: 1555261986}
     - target: {fileID: 617952891147493527, guid: 55cbafa2ab47efa46af253c6f59b1a81, type: 3}
       propertyPath: increaseValue
-      value: 15
+      value: 25000
       objectReference: {fileID: 0}
     - target: {fileID: 1768472816823086124, guid: 55cbafa2ab47efa46af253c6f59b1a81, type: 3}
       propertyPath: m_Name
       value: ClickPowerUpgradeButton (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2122182895401145973, guid: 55cbafa2ab47efa46af253c6f59b1a81, type: 3}
+      propertyPath: enText
+      value: Mineral feed
+      objectReference: {fileID: 0}
+    - target: {fileID: 2122182895401145973, guid: 55cbafa2ab47efa46af253c6f59b1a81, type: 3}
+      propertyPath: ruText
+      value: "\u041C\u0438\u043D\u0435\u0440\u0430\u043B\u044C\u043D\u0430\u044F
+        \u043F\u043E\u0434\u043A\u043E\u0440\u043C\u043A\u0430"
       objectReference: {fileID: 0}
     - target: {fileID: 2401586258939767550, guid: 55cbafa2ab47efa46af253c6f59b1a81, type: 3}
       propertyPath: m_text
@@ -9717,7 +9896,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7655428484239365473, guid: 55cbafa2ab47efa46af253c6f59b1a81, type: 3}
       propertyPath: m_text
-      value: 600 <sprite=0>
+      value: 1M <sprite=0>
       objectReference: {fileID: 0}
     - target: {fileID: 8257875683642172504, guid: 55cbafa2ab47efa46af253c6f59b1a81, type: 3}
       propertyPath: m_Sprite
@@ -9821,7 +10000,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9201669614319405925, guid: 55cbafa2ab47efa46af253c6f59b1a81, type: 3}
       propertyPath: m_text
-      value: "+15  \u043A \u043A\u043B\u0438\u043A\u0443"
+      value: "+25K  \u043A \u043A\u043B\u0438\u043A\u0443"
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -10431,7 +10610,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.0000429161, y: 1125.3425}
+  m_AnchoredPosition: {x: -0.0000429161, y: 1723.9452}
   m_SizeDelta: {x: 818.49, y: 0}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!114 &1641560649
@@ -10976,7 +11155,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 482631610344835962, guid: 9414ac6509b8cfa418bd9e5a2e7e5a67, type: 3}
       propertyPath: price
-      value: 4000
+      value: 15000000
       objectReference: {fileID: 0}
     - target: {fileID: 482631610344835962, guid: 9414ac6509b8cfa418bd9e5a2e7e5a67, type: 3}
       propertyPath: decoration
@@ -10996,7 +11175,7 @@ PrefabInstance:
       objectReference: {fileID: 1555261986}
     - target: {fileID: 482631610344835962, guid: 9414ac6509b8cfa418bd9e5a2e7e5a67, type: 3}
       propertyPath: increaseValue
-      value: 50
+      value: 300000
       objectReference: {fileID: 0}
     - target: {fileID: 482631610344835962, guid: 9414ac6509b8cfa418bd9e5a2e7e5a67, type: 3}
       propertyPath: scorePerSecondManager
@@ -11014,13 +11193,21 @@ PrefabInstance:
       propertyPath: m_fontSize
       value: 72
       objectReference: {fileID: 0}
+    - target: {fileID: 4133541730935456846, guid: 9414ac6509b8cfa418bd9e5a2e7e5a67, type: 3}
+      propertyPath: enText
+      value: +300K per second
+      objectReference: {fileID: 0}
+    - target: {fileID: 4133541730935456846, guid: 9414ac6509b8cfa418bd9e5a2e7e5a67, type: 3}
+      propertyPath: ruText
+      value: "+300K \u0432 \u0441\u0435\u043A\u0443\u043D\u0434\u0443"
+      objectReference: {fileID: 0}
     - target: {fileID: 6767698453756767447, guid: 9414ac6509b8cfa418bd9e5a2e7e5a67, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: -55.100006
       objectReference: {fileID: 0}
     - target: {fileID: 7655428484239365473, guid: 9414ac6509b8cfa418bd9e5a2e7e5a67, type: 3}
       propertyPath: m_text
-      value: 4K <sprite=0>
+      value: 15M <sprite=0>
       objectReference: {fileID: 0}
     - target: {fileID: 8257875683642172504, guid: 9414ac6509b8cfa418bd9e5a2e7e5a67, type: 3}
       propertyPath: m_Sprite
@@ -11122,9 +11309,17 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 38.040024
       objectReference: {fileID: 0}
+    - target: {fileID: 9170697333751304550, guid: 9414ac6509b8cfa418bd9e5a2e7e5a67, type: 3}
+      propertyPath: enText
+      value: Watermelon pile
+      objectReference: {fileID: 0}
+    - target: {fileID: 9170697333751304550, guid: 9414ac6509b8cfa418bd9e5a2e7e5a67, type: 3}
+      propertyPath: ruText
+      value: "\u0410\u0431\u0443\u0437\u043D\u0430\u044F \u043A\u0443\u0447\u0430"
+      objectReference: {fileID: 0}
     - target: {fileID: 9201669614319405925, guid: 9414ac6509b8cfa418bd9e5a2e7e5a67, type: 3}
       propertyPath: m_text
-      value: "+50 \u0432 \u0441\u0435\u043A\u0443\u043D\u0434\u0443"
+      value: "+300K \u0432 \u0441\u0435\u043A\u0443\u043D\u0434\u0443"
       objectReference: {fileID: 0}
     - target: {fileID: 9201669614319405925, guid: 9414ac6509b8cfa418bd9e5a2e7e5a67, type: 3}
       propertyPath: m_fontSize
@@ -11266,6 +11461,14 @@ PrefabInstance:
       propertyPath: m_fontSize
       value: 65.2
       objectReference: {fileID: 0}
+    - target: {fileID: 4133541730935456846, guid: 9414ac6509b8cfa418bd9e5a2e7e5a67, type: 3}
+      propertyPath: enText
+      value: +25 per second
+      objectReference: {fileID: 0}
+    - target: {fileID: 4133541730935456846, guid: 9414ac6509b8cfa418bd9e5a2e7e5a67, type: 3}
+      propertyPath: ruText
+      value: "+25 \u0432 \u0441\u0435\u043A\u0443\u043D\u0434\u0443"
+      objectReference: {fileID: 0}
     - target: {fileID: 6767698453756767447, guid: 9414ac6509b8cfa418bd9e5a2e7e5a67, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: -55.100006
@@ -11382,6 +11585,14 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 37.4
       objectReference: {fileID: 0}
+    - target: {fileID: 9170697333751304550, guid: 9414ac6509b8cfa418bd9e5a2e7e5a67, type: 3}
+      propertyPath: enText
+      value: Watermelon patch
+      objectReference: {fileID: 0}
+    - target: {fileID: 9170697333751304550, guid: 9414ac6509b8cfa418bd9e5a2e7e5a67, type: 3}
+      propertyPath: ruText
+      value: "\u0410\u0440\u0431\u0443\u0437\u043D\u0430\u044F \u0433\u0440\u044F\u0434\u043A\u0430"
+      objectReference: {fileID: 0}
     - target: {fileID: 9201669614319405925, guid: 9414ac6509b8cfa418bd9e5a2e7e5a67, type: 3}
       propertyPath: m_text
       value: "+25 \u0432 \u0441\u0435\u043A\u0443\u043D\u0434\u0443"
@@ -11405,7 +11616,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 482631610344835962, guid: 9414ac6509b8cfa418bd9e5a2e7e5a67, type: 3}
       propertyPath: price
-      value: 15000
+      value: 1000000000
       objectReference: {fileID: 0}
     - target: {fileID: 482631610344835962, guid: 9414ac6509b8cfa418bd9e5a2e7e5a67, type: 3}
       propertyPath: decoration
@@ -11425,7 +11636,7 @@ PrefabInstance:
       objectReference: {fileID: 1555261986}
     - target: {fileID: 482631610344835962, guid: 9414ac6509b8cfa418bd9e5a2e7e5a67, type: 3}
       propertyPath: increaseValue
-      value: 100
+      value: 650000000
       objectReference: {fileID: 0}
     - target: {fileID: 482631610344835962, guid: 9414ac6509b8cfa418bd9e5a2e7e5a67, type: 3}
       propertyPath: scorePerSecondManager
@@ -11443,13 +11654,21 @@ PrefabInstance:
       propertyPath: m_fontSize
       value: 63.6
       objectReference: {fileID: 0}
+    - target: {fileID: 4133541730935456846, guid: 9414ac6509b8cfa418bd9e5a2e7e5a67, type: 3}
+      propertyPath: enText
+      value: +650M per second
+      objectReference: {fileID: 0}
+    - target: {fileID: 4133541730935456846, guid: 9414ac6509b8cfa418bd9e5a2e7e5a67, type: 3}
+      propertyPath: ruText
+      value: "+650M \u0432 \u0441\u0435\u043A\u0443\u043D\u0434\u0443"
+      objectReference: {fileID: 0}
     - target: {fileID: 6767698453756767447, guid: 9414ac6509b8cfa418bd9e5a2e7e5a67, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: -55.100006
       objectReference: {fileID: 0}
     - target: {fileID: 7655428484239365473, guid: 9414ac6509b8cfa418bd9e5a2e7e5a67, type: 3}
       propertyPath: m_text
-      value: 15K <sprite=0>
+      value: 1B <sprite=0>
       objectReference: {fileID: 0}
     - target: {fileID: 8257875683642172504, guid: 9414ac6509b8cfa418bd9e5a2e7e5a67, type: 3}
       propertyPath: m_Sprite
@@ -11547,9 +11766,17 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 37.4
       objectReference: {fileID: 0}
+    - target: {fileID: 9170697333751304550, guid: 9414ac6509b8cfa418bd9e5a2e7e5a67, type: 3}
+      propertyPath: enText
+      value: Giant greenhouse
+      objectReference: {fileID: 0}
+    - target: {fileID: 9170697333751304550, guid: 9414ac6509b8cfa418bd9e5a2e7e5a67, type: 3}
+      propertyPath: ruText
+      value: "\u0413\u0438\u0433\u0430\u043D\u0442\u0441\u043A\u0430\u044F \u0442\u0435\u043F\u043B\u0438\u0446\u0430"
+      objectReference: {fileID: 0}
     - target: {fileID: 9201669614319405925, guid: 9414ac6509b8cfa418bd9e5a2e7e5a67, type: 3}
       propertyPath: m_text
-      value: "+100 \u0432 \u0441\u0435\u043A\u0443\u043D\u0434\u0443"
+      value: "+650M \u0432 \u0441\u0435\u043A\u0443\u043D\u0434\u0443"
       objectReference: {fileID: 0}
     - target: {fileID: 9201669614319405925, guid: 9414ac6509b8cfa418bd9e5a2e7e5a67, type: 3}
       propertyPath: m_fontSize
