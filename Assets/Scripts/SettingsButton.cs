@@ -3,15 +3,13 @@ using UnityEngine;
 
 public class SettingsButton : MonoBehaviour
 {
-    private static readonly int CloseSettings = Animator.StringToHash("CloseSettings");
-    private static readonly int OpenSettings = Animator.StringToHash("OpenSettings");
-    
-    [SerializeField] private Animator animator;
+    [SerializeField] private SettingsPanel settingsPanel;
     [SerializeField] private AudioSource audioSource;
     
-    public void Open()
+    public void OpenSettingsPanel()
     {
-        animator.SetTrigger(OpenSettings);
+        settingsPanel.OpenAnimation();
+        
         audioSource.Play();
         
         DOTween.Sequence()
@@ -20,9 +18,10 @@ public class SettingsButton : MonoBehaviour
             .Play();
     }
     
-    public void Close()
+    public void CloseSettingsPanel()
     {
-        animator.SetTrigger(CloseSettings);
+        settingsPanel.CloseAnimation();
+        
         audioSource.Play();
         
         DOTween.Sequence()
