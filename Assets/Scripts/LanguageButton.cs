@@ -9,6 +9,7 @@ public class LanguageButton : MonoBehaviour
     [SerializeField] private Sprite enSprite;
     [SerializeField] private Sprite ruSprite;
     
+    [ContextMenu("Switch language")]
     public void OnClick()
     {
         if (YG2.lang == "ru")
