@@ -1,22 +1,16 @@
-using System.Collections;
+using DG.Tweening;
 using UnityEngine;
 
 public class BonusPanelButton : MonoBehaviour
 {
     [SerializeField] private CanvasGroup bonusPanel;
     
-    public void CloseBonusPanel()
+    private void CloseBonusPanel()
     {
-        StartCoroutine(ClosingBonusPanel());
-    }
-
-    private IEnumerator ClosingBonusPanel()
-    {
-        while (bonusPanel.alpha > 0.0f)
-        {
-            bonusPanel.alpha -= 0.1f;
-            yield return new WaitForSeconds(0.01f);
-        }
+        DOTween.Sequence()
+            .Append(bonusPanel.DOFade(0.0f, 0.1f))
+            .Play();
+        
         bonusPanel.gameObject.SetActive(false);
     }
 }
