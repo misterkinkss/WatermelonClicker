@@ -4,6 +4,8 @@ using UnityEngine;
 
 public abstract class ShopButton : MonoBehaviour
 {
+    [SerializeField] protected ParticleSystem buyParticleSystem;
+    [SerializeField] protected TMP_Text buyParticleText;
     [SerializeField] protected ScoreCounter scoreCounter;
     [SerializeField] protected AudioSource audioSource;
     [SerializeField] protected double price;
@@ -17,5 +19,8 @@ public abstract class ShopButton : MonoBehaviour
             .Play();
         
         audioSource.Play();
+
+        buyParticleText.text = "-" + ScoreFormatter.Format(price);
+        buyParticleSystem.Emit(1);
     }
 }
