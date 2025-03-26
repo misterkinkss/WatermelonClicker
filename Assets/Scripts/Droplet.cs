@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using UnityEngine;
+using YG;
 
 public class Droplet : MonoBehaviour
 {
@@ -26,6 +27,21 @@ public class Droplet : MonoBehaviour
             animator.SetTrigger(Fall);
         }
     }
+
+    private void OnRewardAdv(string id)
+    {
+        if (id == "droplet")
+        {
+            animator.SetTrigger(Fall);
+            RestartDropletLaunchCycle();
+        }
+    }
+    
+    private void RestartDropletLaunchCycle()
+    {
+        StopCoroutine(DropletLaunchCycle());
+        StartCoroutine(DropletLaunchCycle());
+    }
     
     public void OnClick()
     {
@@ -33,5 +49,15 @@ public class Droplet : MonoBehaviour
         StartCoroutine(colorfulScreen.ActiveColorfulScreenBonus());
         
         OnDropletClicked?.Invoke();
+    }
+
+    private void OnEnable()
+    {
+        YG2.onRewardAdv += OnRewardAdv;
+    }
+    
+    private void OnDisable()
+    {
+        YG2.onRewardAdv -= OnRewardAdv;
     }
 }

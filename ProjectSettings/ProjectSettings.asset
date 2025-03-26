@@ -712,7 +712,7 @@ PlayerSettings:
     PS5: DOTWEEN
     QNX: DOTWEEN
     ReservedCFE: DOTWEEN
-    Standalone: DOTWEEN;YG_PLUGIN_YANDEX_GAME;PLUGIN_YG_2;TMP_YG2;RU_YG2;Localization_yg
+    Standalone: DOTWEEN;YG_PLUGIN_YANDEX_GAME;PLUGIN_YG_2;TMP_YG2;RU_YG2;Localization_yg;RewardedAdv_yg
     VisionOS: DOTWEEN
     WebGL: DOTWEEN
     Windows Store Apps: DOTWEEN
