@@ -25,7 +25,7 @@ public class ProgressBar : MonoBehaviour
         }
     }
 
-    private void OnLevelUp()
+    private void OnLevelChanged()
     {
         if (experienceLevelCounter.Level != experienceLevelCounter.MaxLevel)
         {
@@ -37,11 +37,14 @@ public class ProgressBar : MonoBehaviour
             watermelonImage.sprite = evolutionStageSprites[experienceLevelCounter.MaxLevel];
             watermelonRectTransform.sizeDelta = new Vector2(740.5f, 740.5f);
         }
+
+        if (experienceLevelCounter.Level != 0)
+        {
+            animator.SetTrigger(_flash);
+            audioSource.Play();
+        }
         
         UpdateText(YG2.lang);
-        
-        animator.SetTrigger(_flash);
-        audioSource.Play();
     }
 
     private void UpdateText(string language)
@@ -72,13 +75,13 @@ public class ProgressBar : MonoBehaviour
     
     private void OnEnable()
     {
-        ExperienceLevelCounter.OnLevelUp += OnLevelUp;
+        ExperienceLevelCounter.OnLevelChanged += OnLevelChanged;
         YG2.onSwitchLang += UpdateText;
     }
 
     private void OnDisable()
     {
-        ExperienceLevelCounter.OnLevelUp -= OnLevelUp;
+        ExperienceLevelCounter.OnLevelChanged -= OnLevelChanged;
         YG2.onSwitchLang -= UpdateText;
     }
 }

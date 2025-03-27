@@ -1,18 +1,26 @@
 using System;
 using UnityEngine;
-using UnityEngine.Serialization;
+using YG;
 
 public class ExperienceLevelCounter : MonoBehaviour
 {
-    public static event Action OnLevelUp;
+    public static event Action OnLevelChanged;
     
     [SerializeField] private RequiredNextLevelClicksData requiredNextLevelClicksData;
     
     private int _experience;
-
-    public int MaxLevel => requiredNextLevelClicksData.MaxLevel;
+    private int _level;
     
-    public int Level { get; private set; }
+    public int Level
+    {
+        get => _level;
+        private set
+        {
+            _level = value;
+            
+            OnLevelChanged?.Invoke();
+        }
+    }
     
     public int Experience
     {
@@ -30,6 +38,8 @@ public class ExperienceLevelCounter : MonoBehaviour
             }
         }
     }
+    
+    public int MaxLevel => requiredNextLevelClicksData.MaxLevel;
 
     public int GetCurrentRequiredNextLevelClicks()
     {
@@ -40,7 +50,29 @@ public class ExperienceLevelCounter : MonoBehaviour
     {
         Experience = 0;
         Level++;
-        
-        OnLevelUp?.Invoke();
+    }
+    
+    private void Save(SavesYG savesYg)
+    {
+        savesYg.level = Level;
+        savesYg.experience = Experience;
+    }
+
+    private void Load(SavesYG savesYg)
+    {
+        Level = savesYg.level;
+        Experience = savesYg.experience;
+    }
+
+    private void OnEnable()
+    {
+        SaveLoadSystem.LoadRequestEvent += Load;
+        SaveLoadSystem.SaveRequestEvent += Save;
+    }
+
+    private void OnDisable()
+    {
+        SaveLoadSystem.LoadRequestEvent -= Load; 
+        SaveLoadSystem.SaveRequestEvent -= Save;
     }
 }

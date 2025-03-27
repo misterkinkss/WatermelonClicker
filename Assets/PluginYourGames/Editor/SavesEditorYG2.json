@@ -1,0 +1,17 @@
+{
+    "intExample": 5,
+    "strExample": "Hello!",
+    "boolExample": [
+        false,
+        false,
+        false,
+        false
+    ],
+    "idSave": 6,
+    "score": 100.0,
+    "scorePerSecond": 0.0,
+    "powerClick": 1.0,
+    "level": 2,
+    "experience": 0,
+    "isSoundActive": true
+}

@@ -1,5 +1,6 @@
 using System;
 using UnityEngine;
+using YG;
 
 public class Watermelon : MonoBehaviour
 {
@@ -28,7 +29,7 @@ public class Watermelon : MonoBehaviour
         }
     }
     
-    private void Start()
+    private void Awake()
     {
         _multiplier = 1.0D;
         _powerClick = 1.0D;
@@ -64,16 +65,30 @@ public class Watermelon : MonoBehaviour
         
         OnPowerClickChanged?.Invoke(_powerClick * _multiplier);
     }
+    
+    private void Save(SavesYG savesYg)
+    {
+        savesYg.powerClick = PowerClick;
+    }
 
+    private void Load(SavesYG savesYg)
+    {
+        PowerClick = savesYg.powerClick;
+    }
+    
     private void OnEnable()
     {
         Droplet.OnDropletClicked += IncreaseMultiplier;
         ColorfulScreen.OnBonusEnded += DecreaseMultiplier;
+        SaveLoadSystem.LoadRequestEvent += Load;
+        SaveLoadSystem.SaveRequestEvent += Save;
     }
 
     private void OnDisable()
     {
         Droplet.OnDropletClicked -= IncreaseMultiplier;
         ColorfulScreen.OnBonusEnded -= DecreaseMultiplier;
+        SaveLoadSystem.LoadRequestEvent -= Load; 
+        SaveLoadSystem.SaveRequestEvent -= Save;
     }
 }
