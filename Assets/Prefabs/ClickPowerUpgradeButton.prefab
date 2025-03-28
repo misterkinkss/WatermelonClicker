@@ -63,8 +63,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5759c9dfbdf890f40afdc8efd73f37f5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scoreCounter: {fileID: 0}
+  buyParticleSystem: {fileID: 0}
+  buyParticleText: {fileID: 0}
   audioSource: {fileID: 0}
+  image: {fileID: 48543362994168391}
+  scoreCounter: {fileID: 0}
   price: 0
   watermelon: {fileID: 0}
   increaseValue: 0
