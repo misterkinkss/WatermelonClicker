@@ -1389,8 +1389,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 272856683}
-        m_TargetAssemblyTypeName: TutorialPageButtons, Assembly-CSharp
+      - m_Target: {fileID: 273712905}
+        m_TargetAssemblyTypeName: TutorialPanel, Assembly-CSharp
         m_MethodName: Open
         m_Mode: 1
         m_Arguments:
@@ -1453,6 +1453,72 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   tutorialPage: {fileID: 1502444588}
   audioSource: {fileID: 1415185101}
+--- !u!1 &273712903
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 273712904}
+  - component: {fileID: 273712905}
+  - component: {fileID: 273712906}
+  m_Layer: 5
+  m_Name: TutorialPageGroup
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &273712904
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 273712903}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1502444589}
+  m_Father: {fileID: 1267357119}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 1920, y: 1080.3}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &273712905
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 273712903}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b89a8c8b8949e6b49853503f8d2b7a4e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  canvasGroup: {fileID: 273712906}
+  tutorialPageImage: {fileID: 1502444590}
+  enSprite: {fileID: 5518655218802966517, guid: 1d5a18daaa60c3c4491fd00923863ede, type: 3}
+  ruSprite: {fileID: -1012620226726709944, guid: e02a8f094b2a1194ab7c8f4a26b1523c, type: 3}
+--- !u!225 &273712906
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 273712903}
+  m_Enabled: 1
+  m_Alpha: 0
+  m_Interactable: 0
+  m_BlocksRaycasts: 0
+  m_IgnoreParentGroups: 0
 --- !u!1 &281912941
 GameObject:
   m_ObjectHideFlags: 0
@@ -4509,8 +4575,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1549895862}
   m_HandleRect: {fileID: 1549895861}
   m_Direction: 2
-  m_Value: 0.99999684
-  m_Size: 0.26615703
+  m_Value: 1
+  m_Size: 0.26616007
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -5222,7 +5288,7 @@ RectTransform:
   - {fileID: 1574092509}
   - {fileID: 448515764}
   - {fileID: 1344751820}
-  - {fileID: 1502444589}
+  - {fileID: 273712904}
   - {fileID: 259549057}
   m_Father: {fileID: 954174050}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -11349,7 +11415,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1502444589
 RectTransform:
   m_ObjectHideFlags: 0
@@ -11363,12 +11429,12 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1615096788}
-  m_Father: {fileID: 1267357119}
+  m_Father: {fileID: 273712904}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -0.002532959}
-  m_SizeDelta: {x: 1920, y: 1080.1}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1502444590
 MonoBehaviour:
@@ -16788,10 +16854,10 @@ RectTransform:
   - {fileID: 1670804509}
   m_Father: {fileID: 1502444589}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -425}
-  m_SizeDelta: {x: 562.59, y: 141.26}
+  m_AnchorMin: {x: 0.5, y: 0}
+  m_AnchorMax: {x: 0.5, y: 0}
+  m_AnchoredPosition: {x: 0, y: 115}
+  m_SizeDelta: {x: 562.59, y: 141.26001}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1615096789
 MonoBehaviour:
@@ -16837,8 +16903,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1615096792}
-        m_TargetAssemblyTypeName: TutorialPageButtons, Assembly-CSharp
+      - m_Target: {fileID: 273712905}
+        m_TargetAssemblyTypeName: TutorialPanel, Assembly-CSharp
         m_MethodName: Close
         m_Mode: 1
         m_Arguments:
@@ -16952,7 +17018,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.0000429161, y: 439.49683}
+  m_AnchoredPosition: {x: -0.0000429161, y: 439.4942}
   m_SizeDelta: {x: 818.49, y: 0}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!114 &1641560649
@@ -17288,6 +17354,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1670804509}
   - component: {fileID: 1670804511}
+  - component: {fileID: 1670804512}
   - component: {fileID: 1670804510}
   m_Layer: 5
   m_Name: Text (TMP)
@@ -17414,6 +17481,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1670804508}
   m_CullTransparentMesh: 1
+--- !u!114 &1670804512
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1670804508}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b15d47d5097e47648b0d3f0ce8e0edcd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ruText: "\u041F\u043E\u043D\u044F\u0442\u043D\u043E"
+  enText: Okay
 --- !u!1 &1715944284
 GameObject:
   m_ObjectHideFlags: 0
