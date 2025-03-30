@@ -32,7 +32,7 @@ public class WateringCan : MonoBehaviour
         Show();
     }
 
-    public void Show()
+    private void Show()
     {
         DOTween.Sequence()
             .Append(transform.DOLocalMoveY(_endYPosition, _showAnimationDuration))
@@ -40,7 +40,7 @@ public class WateringCan : MonoBehaviour
             .Play();
     }
 
-    public void Hide()
+    private void Hide()
     {
         DOTween.Sequence()
             .Append(transform.DOLocalMoveY(_startYPosition, _hideAnimationDuration))
@@ -54,8 +54,14 @@ public class WateringCan : MonoBehaviour
         yield return new WaitForSeconds(30.0f);
         Show();
     }
+
+    private void OnDropletFalling()
+    {
+        StopCoroutine(Cooldown());
+        StartCoroutine(Cooldown());
+    }
     
-    public void OnRewardAdv(string id)
+    private void OnRewardAdv(string id)
     {
         if (id == "droplet") 
             StartCoroutine(Cooldown());
@@ -64,10 +70,12 @@ public class WateringCan : MonoBehaviour
     private void OnEnable()
     {
         YG2.onRewardAdv += OnRewardAdv;
+        Droplet.OnDropletFalling += OnDropletFalling;
     }
 
     private void OnDisable()
     {
         YG2.onRewardAdv -= OnRewardAdv;
+        Droplet.OnDropletFalling -= OnDropletFalling;
     }
 }
