@@ -25,7 +25,6 @@ public class Droplet : MonoBehaviour
     {
         while (true)
         {
-            
             yield return new WaitForSeconds(fallingDropletCooldown);
             
             animator.SetTrigger(Fall);
