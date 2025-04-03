@@ -21,7 +21,7 @@ public class ProgressBar : MonoBehaviour
     {
         if (experienceLevelCounter.Level != experienceLevelCounter.MaxLevel)
         {
-          fillingImage.fillAmount = Mathf.Lerp(fillingImage.fillAmount, (float)experienceLevelCounter.Experience / experienceLevelCounter.GetCurrentRequiredNextLevelClicks(),0.01f);  
+          fillingImage.fillAmount = Mathf.Lerp(fillingImage.fillAmount, (float)experienceLevelCounter.Experience / experienceLevelCounter.GetCurrentRequiredNextLevelClicks(),10.0f * Time.deltaTime);  
         }
     }
 
