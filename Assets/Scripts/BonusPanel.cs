@@ -1,9 +1,12 @@
+using System;
 using DG.Tweening;
 using UnityEngine;
 using YG;
 
 public class BonusPanel : MonoBehaviour
 {
+    public static event Action<bool> OnPanelActivitySwitched;
+    
     [SerializeField] private CanvasGroup canvasGroup;
     
     public void Open()
@@ -14,6 +17,8 @@ public class BonusPanel : MonoBehaviour
             .AppendCallback(() => canvasGroup.interactable = true)
             .AppendCallback(() => canvasGroup.blocksRaycasts = true)
             .Play();
+        
+        OnPanelActivitySwitched?.Invoke(true);
     }
     
     public void Close()
@@ -24,6 +29,8 @@ public class BonusPanel : MonoBehaviour
             .AppendCallback(() => canvasGroup.interactable = false)
             .AppendCallback(() => canvasGroup.blocksRaycasts = false)
             .Play();
+        
+        OnPanelActivitySwitched?.Invoke(false);
     }
 
     public void WatchAd()
