@@ -1,17 +1,9 @@
 {
-    "intExample": 5,
-    "strExample": "Hello!",
-    "boolExample": [
-        false,
-        false,
-        false,
-        false
-    ],
-    "idSave": 234,
-    "score": 60320904.0,
-    "scorePerSecond": 2223898.0,
-    "powerClick": 927144.0,
-    "level": 5,
-    "experience": 441,
+    "idSave": 128,
+    "score": 0.0,
+    "scorePerSecond": 0.0,
+    "powerClick": 1.0,
+    "level": 0,
+    "experience": 0,
     "isSoundActive": true
 }
